@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+  
+{% block title %}Project Description{% endblock %}
+
+{% block img0url %}https://static.igem.wiki/teams/4190/wiki/ezgif-4-08678b0f57.gif{% endblock %}
+{% block img0desc %}{% endblock %}
+
+{% block header %}
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ self.img0url() }}" class="d-block" alt="{{ self.img0desc() }}">
+        <div class="carousel-caption">
+          <h1>{{ self.title() }}</h1>
+          <h4>{{ self.img0desc() }}</h4>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+{% block sideBarEntries %}
+
+  <a class="nav-link active" aria-current="page" href="#description1">Inspiration</a>
+  <a class="nav-link" href="#description2">Mechanism</a>
+  <a class="nav-link" href="#description3">Our Approach</a>
+  <a class="nav-link" href="#Citation-Accordion">Citations</a>
+
+{% endblock %}
+{% block page_content %}
+
+
+    
+    <h4 class="sectionHead mt-5" id = "description1"><strong>Inspiration</strong></h4>
+    <div class="bodyParagraph">
+    <p>Diabetes Mellitus affects roughly 1 in 10 people globally [<a class="citation" href="#Citation-Accordion">1</a>]. Type 2 Diabetes (<a class="glossaryRef" title="Type 2 Diabetes" href="https://2022.igem.wiki/ucsc/glossary#T2D">T2D</a>) comprises around 90% of all diabetes cases and is primarily a result of insulin resistance [<a class="citation" href="#Citation-Accordion">2</a>]. In just our team of 15 undergraduates, all of us are one degree of separation from someone with T2D. Our friends and family with T2D are forced to endure expensive medications and administer multiple daily injections and finger pricks.</p>
+    <p>Moreover, <strong>the burden of diabetes is disproportionately borne by lower income groups</strong> [<a class="citation" href="#Citation-Accordion">3</a>], and even more so in countries that do not have medical infrastructure equipped to offer adequate treatment [<a class="citation" href="#Citation-Accordion">4</a>]. We believe that healthcare is a human right. This prompted our mission to execute a project using the resources and privileges we have to make a global human impact among resource constrained communities.
+    </p>
+    <p>On average, diabetic patients spend $9,601 (USD) annually on T2D care and have over twice the overall medical cost compared to non-diabetic individuals [<a class="citation" href="#Citation-Accordion">5</a>]. The price of diabetes care has exhibited a steep increase while T2D rates are simultaneously growing by a projected fifty percent in the next thirty years [<a class="citation" href="#Citation-Accordion">6</a>]. <strong>The expensive nature of treatment in combination with the concerning spread of T2D sparked the urgency for our project</strong>. The motivation for pursuing Helo is deeply rooted in the lack of global access to T2D care.
+    </p>
+    <p>Chronic complications associated with T2D include heart failure, kidney disease, lower-limb amputations, blindness, and neuropathy [<a class="citation" href="#Citation-Accordion">7</a>]. Of all associated complications, 50 to 85% are preventable by treatment and medication [<a class="citation" href="#Citation-Accordion">8</a>]. <strong>Glucagon-Like Peptide 1 (<a class="glossaryRef" title="An intestinal hormone that exerts profound effects in stimulating glucose-dependent insulin secretion." href="https://2022.igem.wiki/ucsc/glossary#GLP-1">GLP-1</a>) <a class="glossaryRef" title="A molecule in or on the surface of a cell that binds to a ligand, causing a specific effect." href="https://2022.igem.wiki/ucsc/glossary#Receptor">Receptor</a> <a class="glossaryRef" title="Substance that binds to a receptor, producing a similar effect as the intended ligand." href="https://2022.igem.wiki/ucsc/glossary#Agonist">Agonists</a> (<a class="glossaryRef" title="Glucagon-Like Peptide 1 Receptor Agonist" href="https://2022.igem.wiki/ucsc/glossary#GLP-1-RA">GLP-1 RA</a>), such as Exendin-4 (<a class="glossaryRef" title="Exendin-4, a 39-amino acid peptide incretin." href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a>), are one of the leading forms of T2D treatment but can cost upwards of $800 (USD) a month within the U.S. </strong>[<a class="citation" href="#Citation-Accordion">9</a>]. Increasing access to effective diabetes treatments can broadly improve human health and particularly benefit communities suffering from the inequitable distribution of diabetes therapeutics. This is what inspired our project: <b>Helo</b>.
+    </p>
+    </div>
+
+    <h4 class="sectionHead mt-5" id = "description2"><strong>Mechanism</strong></h4>
+    <div class="bodyParagraph">
+    <p>Glucagon-like Peptide 1  is an <a class="glossaryRef" title="Gut peptides that are secreted after nutrient intake and stimulate insulin secretion." href="https://2022.igem.wiki/ucsc/glossary#Incretin">incretin</a> hormone that is naturally released by intestinal <a class="glossaryRef" title="Secrete GLP-1s, an incretin, peptide YY3-36, oxyntomodulin, and glucagon-like peptide-2." href="https://2022.igem.wiki/ucsc/glossary#L-cells">L-cells</a> in response to a rise in blood glucose levels to regulate insulin production [<a class="citation" href="#Citation-Accordion">10</a>]. GLP-1s bind to human GLP-1 receptors (<a class="glossaryRef" title="Glucagon-Like Peptide 1 Receptor" href="https://2022.igem.wiki/ucsc/glossary#GLP-1-R">GLP-1 R</a>) found on pancreatic <a class="glossaryRef" title="Cells found within the pancreas responsible for insulin secretion." href="https://2022.igem.wiki/ucsc/glossary#Beta-Cell">beta cells</a> and activate adenylyl cyclase which converts ATP into cyclic adenosine monophosphate (cAMP). Increased levels of cAMP cause insulin to be released from pancreatic beta cells. GLP-1 is degraded by dipeptidyl peptidase-4 (DPP-4) enzymes and has an average <a class="glossaryRef" title="The amount of time it takes for a substance to decrease its concentration by half." href="https://2022.igem.wiki/ucsc/glossary#half-life">half-life</a> of two minutes <a class="glossaryRef" title="Experiments occurring in whole living organisms such as a mouse, or a Gila monster." href="https://2022.igem.wiki/ucsc/glossary#in-vivo"><i>in vivo</i></a>.
+    </p>
+    <p>Ex-4 is a 39 amino acid peptide originally derived from the salivary glands of the <a class="glossaryRef" title="A species of venomous lizard native to the Southwestern United States." href="https://2022.igem.wiki/ucsc/glossary#Gila-Monster">Gila Monster</a> (<i>Heloderma suspectum</i>) and consists of a single alpha helix [<a class="citation" href="#Citation-Accordion">11</a>]. Ex-4 is resistant to degradation by DPP-4, thus resulting in a longer half-life of around 30 minutes <i>in vivo</i>. The longer half-life of Ex-4 in combination with its competitive binding against native GLP-1 serves as an effective mechanism to increase both insulin production and sensitivity for T2D patients [<a class="citation" href="#Citation-Accordion">12</a>].
+    </p>
+    </div>
+
+    <h4 class="sectionHead mt-5" id = "description3"><strong>Our Approach</strong></h4>
+    <div class="bodyParagraph" id="descriptionParagraph">
+    <h5 class = "modelHeader1"><strong>Engineering goal</strong></h5> 
+    <p>We propose that Ex-4 can be naturally produced in <i>Saccharomyces cerevisiae</i> (<a class="glossaryRef" title="Saccharomyces cerevisiae, commonly known as baker's yeast, is a species of yeast that is commonly used for wine-making, baking, and brewing." href="https://2022.igem.wiki/ucsc/glossary#S_cerevisiae"><i>S. cerevisiae</i></a>), commonly known as baker's yeast, as a functional and cost-effective pharmaceutical treatment. As <i>S. cerevisiae</i> is Generally Recognized as Safe (<a class="glossaryRef" title="A chemical or substance added to food that is considered safe by experts under the conditions of its intended use." href="https://2022.igem.wiki/ucsc/glossary#GRAS">GRAS</a>) by the U.S. Food and Drug Administration (<a class="glossaryRef" title="Governmental organization tasked with monitoring food and drug safety in the United States." href="https://2022.igem.wiki/ucsc/glossary#FDA">FDA</a>) [<a class="citation" href="#Citation-Accordion">13</a>], we hypothesize bioencapsulated <i>S. cerevisiae</i> containing Ex-4 can be administered orally to bypass degradation in the stomach and avoid the need for subcutaneous injections [<a class="citation" href="#Citation-Accordion">14</a>]. <strong>Our goal is to produce a cost-effective T2D therapeutic that can be propagated in as little as one square meter and distributed for local communties to grow.</strong></p>
+      <h5 class = "modelHeader1"><strong>Wet lab approach</strong></h5> 
+      <p>We used <i>Escherichia coli</i> (<i><a class="glossaryRef" title="Escherichia coli, a gram-negative bacteria that is often used as a model organsim for synthetic biology due to its fast growth in cheap medium as well as being easily engineerable. " href="https://2022.igem.wiki/ucsc/glossary#E_coli">E. coli</a></i>) as a basis for Ex-4 production while simultaneously pursuing <i>S. cerevisiae</i> as a therapeutic host. Golden Gate Assembly (<a class="glossaryRef" title="A modular assembly method by which multiple DNA fragments can be simultaneously integrated into a plasmid backbone without genetic scarring." href="https://2022.igem.wiki/ucsc/glossary#GGA">GGA</a>) was employed to construct the Ex-4 plasmids that were <a class="glossaryRef" title="Method of transferring exogenous genetic material into a host cell." href="https://2022.igem.wiki/ucsc/glossary#Transformation">transformed</a> into <i>E. coli</i> and <i>S. cerevisiae</i> respectively. For <i>S. cerevisiae</i>, genomic integration of the Ex-4 gene was accomplished by <a class="glossaryRef" title="A type of genetic recombination in which information is exchanged between two similar or identical molecules of double-stranded or single-stranded nucleic acids." href="https://2022.igem.wiki/ucsc/glossary#Homologous-Recombination">homologous recombination</a>. After integration and induced expression, Immobilized Metal Affinity Chromatography (<a class="glossaryRef" title="A procedure where peptides are separated according to their affinity for metal ions that have been immobilized by chelation to an insoluble matrix." href="https://2022.igem.wiki/ucsc/glossary#IMAC">IMAC</a>) was used to isolate Ex-4. <a class="glossaryRef" title="Sodium Dodecyl Sulfate-PolyAcrylamide Gel Electrophoresis; Method of analyzing proteins by weight." href="https://2022.igem.wiki/ucsc/glossary#SDS-PAGE">SDS-PAGE</a> results indicated the presence of Ex-4 in both <i>S. cerevisiae</i> and <i>E. coli</i>. Finally, we plan to conduct a <a class="glossaryRef" title="The strength of a binding interaction between a receptor and a ligand." href="https://2022.igem.wiki/ucsc/glossary#Binding-Affinity">binding affinity</a> assay with our <a class="glossaryRef" title="Recombination" href="https://2022.igem.wiki/ucsc/glossary#Recombination">recombinant</a> GLP-1 R and our Ex-4 to confirm functionality.</p>
+</div>
+
+<div class="accordion bg-dark my-5" id="Citation-Accordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="Citation-AccordionHeading1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCitations" aria-expanded="false" aria-controls="collapseCitations">
+          Citations
+        </button>
+      </h2>
+      <div id="collapseCitations" class="accordion-collapse collapse" aria-labelledby="Citation-AccordionHeading1" data-bs-parent="#Citation-Accordion">
+        <div class="accordion-body">
+          <ol class="noBP">
+            <li id="citation1">[1] “IDF news.” <a class="citation" href="https://www.idf.org/news/240:diabetes-now-affects-one-in-10-adults-worldwide.html"> https://www.idf.org/news/240:diabetes-now-affects-one-in-10-adults-worldwide.html </a>(accessed Oct. 05, 2022).</li>
+              <li id="citation2">[2]  R. Goyal and I. Jialal, “Diabetes Mellitus Type 2,” in <i>StatPearls, Treasure Island (FL): StatPearls Publishing</i>, 2022. Accessed: Oct. 05, 2022. [Online]. Available: <a class="citation" href="http://www.ncbi.nlm.nih.gov/books/NBK513253/"">http://www.ncbi.nlm.nih.gov/books/NBK513253/</a></li>
+              <li id="citation3">[3]  D. J. Gaskin <i>et al.</i>, “Disparities in Diabetes: The Nexus of Race, Poverty, and Place,” <i>Am J Public Health</i>, vol. 104, no. 11, pp. 2147–2155, Nov. 2014, <a class="citation" href="https://ajph.aphapublications.org/doi/10.2105/AJPH.2013.301420/">doi: 10.2105/AJPH.2013.301420</a>.</li>
+              <li id="citation4">[4]  “Global and regional diabetes prevalence estimates for 2019 and projections for 2030 and 2045: Results from the International Diabetes Federation Diabetes Atlas, 9th edition - Diabetes Research and Clinical Practice.” <a class="citation" href="https://www.diabetesresearchclinicalpractice.com/article/S0168-8227(19)31230-6/fulltext"> https://www.diabetesresearchclinicalpractice.com/article/S0168-8227(19)31230-6/fulltext</a>(accessed Jul. 27, 2022).</li>
+              <li id="citation5">[5] “The Cost of Diabetes | ADA.” <a class="citation" href="https://diabetes.org/about-us/statistics/cost-diabetes"> https://diabetes.org/about-us/statistics/cost-diabetes</a>(accessed Oct. 08, 2022).</li>
+              <li id="citation6">[6]  J. P. Boyle <i>et al.</i>, “Projection of Diabetes Burden Through 2050: Impact of changing demography and disease prevalence in the U.S.,” <i>Diabetes Care</i>, vol. 24, no. 11, pp. 1936–1940, Nov. 2001, <a class="citation" href="https://diabetesjournals.org/care/article/24/11/1936/24758/Projection-of-Diabetes-Burden-Through-2050Impact"> doi: 10.2337/diacare.24.11.1936</a>.</li>
+              <li id="citation7">[7]    A. D. Deshpande, M. Harris-Hayes, and M. Schootman, “Epidemiology of Diabetes and Diabetes-Related Complications,” <i>Phys Ther</i>, vol. 88, no. 11, pp. 1254–1264, Nov. 2008, <a class="citation" href="https://academic.oup.com/ptj/article/88/11/1254/2858146"> doi: 10.2522/ptj.20080020</a>.</li>
+              <li id="citation8"> [8] “Current Trends Premature Mortality from Diabetes Mellitus - - Use of Sentinel Health Event Surveillance to Assess Causes.” <a class="citation" href="https://www.cdc.gov/mmwr/preview/mmwrhtml/00000824.htm"> https://www.cdc.gov/mmwr/preview/mmwrhtml/00000824.htm</a>(accessed Oct. 04, 2022).</li>
+              <li id="citation9"> [9] “Byetta Prices, Coupons & Savings Tips - GoodRx.” <a class="citation" href="https://www.goodrx.com/byetta">https://www.goodrx.com/byetta</a> (accessed Oct. 07, 2022).</li>
+              <li id="citation10"> [10] J. J. Holst, “The physiology of glucagon-like peptide 1,” <i>Physiol Rev</i>, vol. 87, no. 4, pp. 1409–1439, Oct. 2007,  <a class="citation" href="https://journals.physiology.org/doi/full/10.1152/physrev.00034.2006"> doi: 10.1152/physrev.00034.2006</a>.</li>
+              <li id="citation11"> [11] B. L. Furman, “The development of Byetta (exenatide) from the venom of the Gila monster as an anti-diabetic agent,” <i>Toxicon</i>, vol. 59, no. 4, pp. 464–471, Mar. 2012, <a class="citation" href="https://pubmed.ncbi.nlm.nih.gov/21194543/"> doi: 10.1016/j.toxicon.2010.12.016</a>.</li>
+              <li id="citation12"> [12] “Mechanisms of Action and Therapeutic Application of Glucagon-like Peptide-1 - ScienceDirect.” <a class="citation" href="https://www.sciencedirect.com/science/article/pii/S1550413118301797"> https://www.sciencedirect.com/science/article/pii/S1550413118301797</a>(accessed Jul. 27, 2022).</li>
+              <li id="citation13"> [13] V. Sewalt, D. Shanahan, L. Gregg, J. La Marta, and R. Carrillo, “The Generally Recognized as Safe (GRAS) Process for Industrial Microbial Enzymes,” <i>Industrial Biotechnology</i>, vol. 12, no. 5, pp. 295–302, Oct. 2016, <a class="citation" href="https://www.liebertpub.com/doi/10.1089/ind.2016.0011"> doi: 10.1089/ind.2016.0011</a>.</li>
+              <li id="citation14"> [14] K.-C. Kwon, R. Nityanandam, J. S. New, and H. Daniell, “Oral delivery of bioencapsulated exendin-4 expressed in chloroplasts lowers blood glucose level in mice and stimulates insulin secretion in beta-TC6 cells,” <i>Plant Biotechnol J</i>, vol. 11, no. 1, pp. 77–86, Jan. 2013, <a class="citation" href="https://onlinelibrary.wiley.com/doi/10.1111/pbi.12008"> doi: 10.1111/pbi.12008</a>.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+{% endblock %}

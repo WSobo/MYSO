@@ -1,0 +1,680 @@
+{% extends "layout.html" %}
+
+{% block head %}<style>
+#sideNavBar {
+    display: inline-flex;
+}
+#upToTopSVG {
+  display: none;
+}
+</style>{% endblock %}
+  
+{% block title %}Notebook{% endblock %}
+
+{% block img0url %}https://static.igem.wiki/teams/4190/wiki/ezgif-4-e5d1007890.gif{% endblock %}
+{% block img0desc %}{% endblock %}
+
+{% block header %}
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ self.img0url() }}" class="d-block" alt="{{ self.img0desc() }}">
+        <div class="carousel-caption">
+          <h1>{{ self.title() }}</h1>
+          <h4>{{ self.img0desc() }}</h4>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block sideBarEntries %}
+
+  <a class="nav-link active" aria-current="page" href="#June">June</a>
+  <a class="nav-link" href="#July">July</a>
+  <a class="nav-link" href="#August">August</a>
+  <a class="nav-link" href="#September">September</a>
+  <a class="nav-link" href="#October">October</a>
+
+{% endblock %}
+
+{% block page_content %}
+
+<!-- main -- content only
+Haripriya Govind 
+10/2/2022 
+Notebook Page -->
+<!-----------------------------------------------------------
+start of body: contents on page
+
+Month
+------ (hr)
+preformatted text
+Week
+List of 
+------------------------------------------------------------>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3 class="my-5 sectionHead" id="June"><b>June</b></h3>
+
+<div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+            <p>Week of 6/27/2022</p>
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Brainstormed organization and illustrated design of wiki layout on whiteboard in dry lab</dd>
+            <dd> - Learned and practiced languages for wiki design using W3schools and other resources as needed</dd>
+
+          <li class="mt-5"><b>Human Outreach</b></li>
+            <dd>To date: have met with endocrinologists, nephrologists, medical doctors, directors of health centers, and diabetes support program coordinators. 
+              <br>Dr. Rayhan Lal (5/14/22), Doctors Without Borders (5/17/22), Dr. Patricia Wu (6/22/22), Dr. John Demko (6/23/22), Dr. Sunder Mudaliar (6/24/22), Dr. Lawrence DeGhetaldi (6/29/22),  Dr. Matt Sparke (6/30/22) provided thorough insight for current Type II Diabetes treatment that shaped project development preparation </dd>
+
+          <li class="mt-5"><b>Host Organisms</b></li>
+
+          <em><b>Yeast:</b></em>
+            <dd> - Researched yeast and microbial strains, <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Bioencapsulation" style="text-indent: 0px">bioencapsulation</a> methods, <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#half-life" style="text-indent: 0px">half-life</a> extenders, <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Ex-4" style="text-indent: 0px" title="Exendin-4">Ex-4</a> functionality, <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Plasmid" style="text-indent: 0px">plasmids</a> for select strains</dd>
+            <dd> - Looked into strains and backbones for our experiment<dd>
+            <dd> - Met with Prof. Rohinton Kamakaka at UCSC for yeast protein synthesis and received yeast strain and plasmid backbone from his lab</dd>
+          
+          <em><b>Microalgae:</b></em>
+            <dd> - Completed a microalgae protocol, timeline, list of materials, and line itemized cost list </dd>
+
+          <li class="mt-5"><b>Plasmid Design</b></li>
+            <dd> - Constructed Ex-4 insert in pET28:GFP and yeast backone plasmids </dd>
+            <dd> - Ordered plasmid parts from IDT</dd>
+        </ol>
+          </div>
+        </div>
+    </div>
+
+<hr class="my-5">
+
+
+
+
+<h3 class="my-5 sectionHead" id="July"><b>July</b></h3>
+
+<div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            <p>Week of 7/4/2022</p>
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Coded in IDE for wiki pages</dd>
+            <dd> - Brainstormed for theme and aesthetics</dd>
+
+          <li class="mt-5"><b>Human Outreach</b></li>
+            <dd> - Admin team: sent thank you emails for giving month</dd>
+            <dd> - Prepared investment portfolio; meeting with Paul L. Koch, PBSci Dean at UCSC</dd>
+            <dd> - connected with iGEM teams for collaboration (Chihuahua, Mexico and Stoneybrook, New York)</dd>
+            <dd> - Met with Dr. Somen Nandi (7/5/22), from UC Davis, for project development input and Ted Malpass (7/6/22), from UCSC, who has Type 1 Diabetes and works at a nonprofit for accesible medical treatment</dd>
+              
+          <li class="mt-5"><b>Host Organisms</b></li>
+
+          <em><b>Yeast:</b></em>
+            <dd> - Finalized new <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Plasmid" style="text-indent: 0px">plasmid</a> design for available materials and ordered insert gene block</dd>
+            <dd> - Checked lab stock, developed protocols, timelined for experimental work, and conceptualized <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Bioencapsulation" style="text-indent: 0px">bioencapsulation</a> methods</dd>
+            
+          <em><b>Microalgae:</b></em>
+            <dd> - Determined feasibility of microalgae strains from research: comparison of strains (chose <i>Chlamydomonas reinhardtii</i>), methodology of transformation (chose <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#AMT" style="text-indent: 0px" tiFtle="Agrobacterium-mediated Transformation">AMT</a>), and target location (chose nuclear genome)</dd>
+            <dd> - Prepared protocols for various selections of the above criteria</dd>
+
+          <li class="mt-5"><b>Plasmid Design</b></li>
+            <dd> - Gave Golden Gate Assembly (<a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#GGA" style="text-indent: 0px" tiFtle="Golden Gate Assembly">GGA</a>) lectures to establish a collective understanding within the team</dd>
+            <dd> - Finished GGA design and ordered primers</dd>
+            <dd> - Drafted general protocols for chemicompetent cell transformation, plasmid <a href="https://2022.igem.wiki/ucsc/protocols#collapse8eight8">miniprep</a>, colony touchdown <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#PCR" style="text-indent: 0px" title="Polymerase Chain Reaction">PCR</a>, protein purification using a HisPur™ Cobalt Purification Kit (ThermoFisher), and HisPur Cobalt column sterilization for reuse</dd>
+            <dd> - Discussed <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#GLP-1-R" style="text-indent: 0px" title="Glucagon-Like Peptide 1 Receptor ">GLP-1 R</a> design attributes, size, cost, human vs. rat, post translational modifications, understanding and verifying GLP-1 R interaction to <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Ex-4" style="text-indent: 0px" title="Exendin-4">Ex-4</a> </dd>
+        <ol>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            <p>Week of 7/11/2022</p>
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Human Outreach</b></li>
+            <dd> - Finalized iGEM project track selection (7/18/22)</dd>
+            <dd> - Met with Alexander Wolf, Baskin Engineering Dean at UCSC, for story approval</dd>
+
+          <li class="mt-5"><b>Host Organisms</b></li>
+          
+          <em><b>Yeast:</b></em>
+            <dd> - Prepared LB and SOC media </dd>
+            <dd> - Lab preparation for <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#E_coli" style="text-indent: 0px" title="E. coli"><i>E. coli</i></a> and <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#S_cerevisiae" style="text-indent: 0px" title="His-tagged Tobacco Etch Virus Protease"><i>S. cerevisiae</i></a> transformations, including taking inventory</dd>
+
+          <li class="mt-5"><b>Plasmid Design</b></li>
+            <dd> - Nicholas Lorig-Roach, member of DuBois Lab at UCSC, provided cells with His-<a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#TEV-protease" style="text-indent: 0px" title="His-tagged Tobacco Etch Virus Protease">TEV</a> protease and cells for producing His-TEV protease</dd>
+            <dd> - Cells were cultured, given <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#IPTG" style="text-indent: 0px" title="Isopropyl-&beta-D-1-thiogalactopyranoside">IPTG</a>, and pelleted for <a href="https://2022.igem.wiki/ucsc/protocols#collapse12twelve12">cell lysing</a></dd>
+            <dd> - Lysis performed using glass beads and yield extracted through Histidine protein purification protocol by Gravity</dd>
+            <dd> - Given His-TEV protease cells were used for protein purification practice</dd>
+            <dd> - Results were inconclusive</dd> 
+        </ol>
+      </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+<div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            <p>Week of 7/18/2022</p>
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Implemented 'sticky' navbar and fancy hyperlink underlines
+          <li class="mt-5"><b>Human Outreach</b></li>
+            <dd> - Completed first set of website commits of various elements: sticky navbar, fancy hyperlinks mk.1</dd> 
+            <dd> - Used bootstrap scrollspy with a benzene ring design</dd>
+            <dd> - Formatted footer on wiki page </dd>
+            <dd> - Chose team name</dd>
+
+          <li class="mt-5"><b>Computational Modeling</b></li>
+            <dd> - Start of computational modeling</dd>
+            <dd> - Met with SBU for mathematical protein modeling and explained basics of MATLAB</dd>
+
+          <li class="mt-5"><b>Host Organisms</b></li>
+
+          <em><b>Yeast:</b></em>
+            <dd> - Practiced <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#E_coli" style="text-indent: 0px" title="E. coli"><i>E. coli</i></a> transformation and <a href="https://2022.igem.wiki/ucsc/protocols#collapse8eight8">plasmid miniprep</a> to test <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Plasmid" style="text-indent: 0px">plasmid</a></dd>
+            <dd> - Prepared Gibson Assembly protocol </dd>
+            <dd> - Performed <i>E. coli</i> transformation for plasmid part cloning (materials provided by Rohinton Kamakaka lab: plasmid gal1 <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Promoter" style="text-indent: 0px">promoter</a>, terminator, LEU- non integrative, <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#G418" style="text-indent: 0px">G418</a> LEU- integrative, Hyg <a  class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#TRP1" style="text-indent: 0px">TRP1</a> integrative)</dd>
+        </ol>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            <p>Week of 7/25/2022</p>
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Human Outreach</b></li>
+            <dd> - Created google form for weekly subgroup updates</dd>
+            <dd> - Researched 3D modeling display, but shifted focus to more crucial elements for the website design</dd>
+            <dd> - Reformatted google form for weekly submissions</dd>
+
+          <li class="mt-5"><b>Computational Modeling</b></li>
+            <dd> - Introduction to using SimBiology</dd>
+            <dd> - Researched how <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Ligand" style="text-indent: 0px">ligand</a>-<a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Receptor" style="text-indent: 0px">receptor</a> binding functions in depth and how <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Ex-4" style="text-indent: 0px"  title="Exendin-4">Ex-4</a> maintains homeostasis in the body</dd>
+          
+          <li class="mt-5"><b>Host Organisms</b></li>
+          
+          <em><b>Yeast:</b></em>
+            <dd> - Prepared LB and SOC media</dd>
+            <dd> - Lab preparation for <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#E_coli" style="text-indent: 0px" title="E. coli"><i>E. coli</i></a> and <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#S_cerevisiae" style="text-indent: 0px" title="S. cerevisiae"><i>S. cerevisiae</i></a> transformations, including taking inventory</dd>
+            
+            <li class="mt-5"><b>Interlab</b></li>
+              <dd> - Completed <a href="https://old.igem.org/wiki/images/a/a4/InterLab_2022_-_Calibration_Protocol_v2.pdf">Calibration Experiment</a></dd>
+              <dd> - Completed <a href="https://old.igem.org/wiki/images/f/f8/InterLab_2022_Exp1.pdf">Experiment 1</a></dd>
+
+        </ol>
+      </p>
+    </div>
+    <div class="mt-5">
+          </div>
+        </div>
+      </div>
+
+
+<hr classes="my-5">
+
+
+
+
+          <h3 class="sectionHead" id="August"><b>August</b></h3>
+        <br>
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+           <p>Week of 8/1/2022</p>
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Worked on creating and implementing SVGs into the website: included a loading screen and worked on resizing SVG elements for compatibility with end user's screen space</dd>
+            
+          <li class="mt-5"><b>Computational Modeling</b></li>
+            <dd> - Researched and worked on schematics for <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Ligand" style="text-indent: 0px">ligand</a>-<a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Receptor" style="text-indent: 0px">receptor</a> binding, <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#GLP-1-R" style="text-indent: 0px" title="Glucagon-Like Peptide 1 Receptor ">GLP-1 R</a> binding downstream effects, and recombinant protein production rates in both hosts</dd>
+            <dd> - Created a schematic for downstream insulin production in pancreatic beta cells, a mathematical model for ligand-receptor binding, and a graph for pharmacological effect vs. dosage</dd>
+            <dd> - Members of the modeling team began familiarizing themselves with the software and conducted background research.</dd>
+            
+          <li class="mt-5"><b>Human Outreach</b></li>
+            <dd> - Correspondence with Karianne Terry (8/5/22) for safety guidelines</dd>
+            <dd> - IRB research to ensure project safety</dd>
+            <dd> - Emailed various affected communities</dd>
+            <dd> - Met with Dr. Tércio Rocha (8/5/22) who provided perspective on the health care system in Brazil</dd>
+            
+          <li class="mt-5"><b>Host Organisms</b></li>
+          
+          <em><b>Yeast:</b></em>
+            <dd> - Innoculated LEU+ yeast strain (<a  class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#ROY-6783" style="text-indent: 0px">ROY6783</a>) and LEU- yeast strain (JRY4012) in 10ml <a  class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#YPD" style="text-indent: 0px">YPD</a> media, incubated overnight at 30 Celsius on shaker, lid loose </dd>
+            <dd> - Prepared selection plates for <a href="https://2022.igem.wiki/ucsc/protocols#collapse11eleven11"><i>S. cerevisiae</i> transformation</a> </dd>
+            <dd> - Performed cleavage using manufacture protocol for Thermofisher FastDigest NotI Restriction Enzyme</dd>
+            <dd> - Yielded unsuccessful DNA precipitation</dd>
+            <dd> - Performed <a href="https://2022.igem.wiki/ucsc/protocols#collapseFive">yeast transformation</a> with <a href="https://2022.igem.wiki/ucsc/protocols#collapse8eight8">miniprep</a> <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Plasmid" style="text-indent: 0px">plasmid</a> product using the ZYMO Yeast Transformation Kit</dd>
+            <dd> - Transformed non-integrative plasmids (1-1, 1-3) in LEU- yeast strain (JRY4012)</dd>
+            <dd> - Transformed <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#G418" style="text-indent: 0px">G418</a> <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#LEU2" style="text-indent: 0px">LEU2</a> integrative plasmids (2-1, 2-2) in LEU+ yeast strain (ROY6783), plated on G418 antibiotic plates </dd>
+            <dd> - Repeated transformation for successful enzyme digest</dd>
+            <dd> - Transformed Hyg-<a  class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#TRP1" style="text-indent: 0px">TRP1</a> integrative plasmids (3-2, 3-4) in LEU+ yeast strain (ROY6783), plated on Hygromycin B antibiotic plates</dd>
+            <dd> - Replica plating</dd>
+
+            <li class="mt-5"><b>Interlab</b></li>
+            <dd> - Started <a href="https://old.igem.org/wiki/images/f/ff/InterLab_2022_Exp2.pdf">Experiment 2</a></dd>
+        </ol>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+            <p>Week of 8/8/2022</p>
+          </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Learned microformatting for SEO for viewers to readily find our website</dd>
+
+          <li class="mt-5"><b>Host Organisms</b></li>
+
+          <em><b>Yeast:</b></em>
+            <dd> - Obtained <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#LEU2" style="text-indent: 0px">LEU2</a> Cas9 <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Plasmid" style="text-indent: 0px">plasmid</a> from Prof. Rohinton Kamakaka</dd>
+            <dd> - Innoculated <i>S. cerevisiae</i> strains (LEU+ <a  class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#ROY-6783" style="text-indent: 0px">ROY6783</a> and LEU- JRY4012) in 10ml culture 25&#8451 overnight</dd>
+            <dd> - Transformed <i>S. cerevisiae</i> strains</dd>
+            <dd> - Made protein expression media</dd>
+            <dd> - Replica plating</dd>
+            <dd> - Ran gel of <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Colony-PCR" style="text-indent: 0px">colony PCR</a> product from <a href="https://2022.igem.wiki/ucsc/protocols#collapse11eleven11"><i>S. cerevisiae</i> transformation</a></dd>
+          
+          <em><i><b><i>E. coli</i></b></i>:</em>
+            <dd> - Transformed pET28:GFP into TOP10</dd>
+            <dd> - Inverse PCR, gel, clear band showing linearized backbone </dd>
+            <dd> - <a href="https://2022.igem.wiki/ucsc/protocols#collapseFour">Dpn1 + heat treatment</a> on some of the iPCR rxns, <a href="https://2022.igem.wiki/ucsc/protocols#collapseFive">Golden Gate Assembly</a>, <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#pET28:Ex-4" style="text-indent: 0px">pET28:Ex-4</a> transformed into <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#DH10B" style="text-indent: 0px">DH10B</a> (8/9/22)
+            <dd> - Transformed more pET28:Ex-4 into DH10B</dd>
+            <dd> - Inoculated DH10B, performed colony <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#PCR" style="text-indent: 0px" title="Polymerase Chain Reaction">PCR</a>, index plates, and gels: had successful yield of <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Ex-4" style="text-indent: 0px" title="Exendin-4">Ex-4</a> bands
+            <dd> - <a href="https://2022.igem.wiki/ucsc/protocols#collapse8eight8" style="text-indent: 0px">Miniprep</a> on innoculated pET28:Ex-4, sent for <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Sanger-Sequencing" style="text-indent: 0px">Sanger Sequencing</a></dd> 
+            <dd> - Received successful sequencing results</dd>
+
+            <li class="mt-5"><b>Interlab</b></li>
+            <dd> - Completed Experiment 2</dd>
+        </ol>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+            <p>Week of 8/15/2022</p>
+          </button>
+        </h2>
+        <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Reorganized website layout and delegated pages with iGEM criteria to subgroups</dd>
+            <dd> - Wiki development: touched up jump to top button, fixed banner carousel at top of page, started implementing the loading screen</dd>
+
+          <li class="mt-5"><b>Host Organisms</b></li>
+
+          <em><b>Yeast:</b></em>
+            <dd> - Innoculated <i>S. cerevisiae</i> strains (LEU+ <a  class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#ROY-6783" style="text-indent: 0px">ROY6783</a> and LEU- JRY4012) in 5mL culture for protein purification</dd>
+            <dd> - <a href="https://2022.igem.wiki/ucsc/glossary#collapse8eight8">Plasmid miniprep</a></dd>
+            <dd> - <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#PCR" style="text-indent: 0px" title="Polymerase Chain Reaction">PCR</a></dd>
+            <dd> - <a href="collapse15fifteen15">Genomic DNA isolation</a></dd>
+            <dd> - Performed <a href="https://2022.igem.wiki/ucsc/protocols#collapseX">gel electrophoresis</a> on Genomic DNA to check for integration of <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Ex-4" style="text-indent: 0px" title="Exendin-4">Ex-4</a> at homology sites, protein purification, and sent for <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Sanger-Sequencing" style="text-indent: 0px">Sanger Sequencing</a> of Genomic DNA to check for integration of Ex-4 at homology sites</dd>
+            <dd> - Lab preparation for <i>E. coli</i> and <i>S. cerevisiae</i> transformations, including taking inventory</dd>
+          
+          <em><i><b><i>E. coli</i></b></i>:</em>
+            <dd> - Transformed <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#pET28:Ex-4" style="text-indent: 0px">pET28:Ex-4</a> into <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#BL21" style="text-indent: 0px">BL21</a>, innoculated transformants, index plate, and <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Colony-PCR" style="text-indent: 0px">colony PCR</a>/gel</dd>
+            <dd> - Ran an agarose gel on PCR samples of transformed pET28:Ex-4 in BL21 and successful yield of Ex-4 bands</dd>
+            <dd> - Miniprep on innoculated pET28:Ex-4 and sent for Sanger Sequencing</dd>
+            <dd> - Received confirmation from sequencing that pET28:Ex-4 was successfully transfected into the <i>E. coli</i></dd>
+        </ol>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+            <p>Week of 8/22/2022</p>
+          </button>
+        </h2>
+        <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Notebook page development and testing; developed an SVG design for the page</dd>
+        </ol>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+            <p>Week of 8/29/2022</p>
+          </button>
+        </h2>
+        <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Continued coding and testing various elements for notebook page (buttons and collapsibles)
+            <dd> - Various redesigns of notebook page format</dd>
+
+          <li class="mt-5"><b>Human Outreach</b></li>
+            <dd> - Met with NGO founder Annette Oshin (9/1/22)</dd>
+            <dd> - promo video submitted (9/2/22)</dd>
+
+          <li class="mt-5"><b>Computational Modeling</b></li>
+            <dd> - Devised a detailed schedule for modeling work due by wiki freeze</dd>
+            <dd> - Identified literature values for protein production rate constants, derived formulas used in the competitive binding model, coded both models</dd>
+          
+          <li class="mt-5"><b>Host Organisms</b></li>
+          
+          <em><b>Yeast:</b></em>
+            <dd> - <i>S. cerevisiae</i> culture innoculation for second round of protein purification</dd>
+        </ol>
+      </p>
+    </div>
+    <div class="mt-5">
+          </div>
+        </div>
+      </div>
+
+
+
+        <hr class="my-5">
+
+
+          <h3 class="sectionHead" id="September"><b>September</b></h3>
+        <br>
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+            <br>
+            <p>Week of 9/5/2022</p>
+          </button>
+        </h2>
+        <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - A hexagonal grid using flexboxes was achieved for the Team/Attributions page</dd>
+          <li class="mt-5"><b>Computational Modeling</b></li>
+            <dd> - Development of competitive binding model: researched parameter values, derived fractional occupancy equation, and coded the model in Python</dd>
+            <dd> - Eric Malekos helped troubleshoot our code</dd>
+
+          <li class="mt-5"><b>Human Outreach</b></li>
+            <dd> - Follow up with Dr. Rayhan Lal (9/7/22)</dd>
+
+          <li class="mt-5"><b>Host Organisms</b></li>
+
+          <em><b>Yeast:</b></em>
+            <dd> - Performed protein purification</dd>
+            <dd> - Successful <a href="https://2022.igem.wiki/ucsc/protocols#collapse14fourteen14">SDS-PAGE</a> gel showing expression of <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#His-Tag" style="text-indent: 0px">His-tag</a> <a href="https://2022.igem.wiki/ucsc/protocols#collapse10ten10">Golden Gate Assembly</a> protein from genomic DNA</dd>
+          
+          <em><i><b><i>E. coli</i></b></i>:</em>
+            <dd> - Transformed <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Ex-4" style="text-indent: 0px" title="Exendin-4">Ex-4</a> again into <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#C41" style="text-indent: 0px">C41</a> <a href="https://2022.igem.wiki/ucsc/glossary#collapse6Six6"><i>E. coli</i></a> since it has been in freezer for a long time</dd>
+            <dd> - Used freshly purified Ex-4 for our pancreatic beta cell test, <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Binding-Affinity" style="text-indent: 0px">binding affinity</a> test, and Western Blot</dd>
+            <dd> - Transformation was successful and colonies were innoculated</dd>
+            <dd> - Colony <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#PCR" style="text-indent: 0px" title="Polymerase Chain Reaction">PCR</a> gel was performed</dd>
+            <dd> - Expected bands were shown proving that Ex-4 was successfully transfected into our protein producing C41 cells</dd>
+        </ol>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+        <br>
+            <p>Week of 9/12/2022</p>
+          </button>
+        </h2>
+        <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Worked on the color pallet, structure of the nav bar, and reorganized layout of the wiki</dd>
+            <dd> - The flask jinja template documentation was utilized to achieve some reorganization</dd>
+            <dd> - Began organization of content for wiki pages</dd>
+          
+          <li class="mt-5"><b>Computational Model</b></li>
+            <dd> - Worked on the dose-effect model: Searched for parameter values, derived E<sub>max</sub> equation, and coded the model in Python</dd>
+            <dd> - Eric Malekos viewed our graphs and provided feedback for optimization</dd>
+            <dd> - Slight changes were made to the previous competitive binding model (developed week of 9/5/2022) to better format information</dd>
+          
+          <li class="mt-5"><b>Human Outreach</b></li>
+            <dd> - Safety form submitted (9/16/22)</dd>
+          
+          <li class="mt-5"><b>Host Organisms</b></li>
+          
+          <em><i><b><i>E. coli</i></b></i>:</em>
+            <dd> - Performed protein purification using an <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#FPLC" style="text-indent: 0px" title="Fast Protein Liquid Chromatography">FPLC</a> machine, but to our dismay, the FPLC needs maintenance</dd>
+            <dd> - Performed <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#SDS-PAGE" style="text-indent: 0px" title="Sodium Dodecyl Sulfate-PolyAcrylamide Gel Electrophoresis">SDS-PAGE</a> to verify if <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#GLP-1-R" style="text-indent: 0px" title="Glucagon-Like Peptide 1 Receptor ">GLP-1R</a> was purified, despite our faulty equipment</dd>
+            <dd> - Our SDS-PAGE test to confirm the FPLC purification displayed that <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Ex-4" style="text-indent: 0px" title="Exendin-4">Ex-4</a> was not purified</dd>
+            <dd> - Performed <a href="https://2022.igem.wiki/ucsc/protocols#collapse13thirteen13">IMAC</a> protein purification by gravity</dd>
+            <dd> - Ex-4 was grown in LB/Kan and innoculated with <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#IPTG" style="text-indent: 0px" title="Isopropyl-&beta-D-1-thiogalactopyranoside">IPTG</a> to prepare for protein purification</dd>  
+          </ol>
+      </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+        <br>
+            <p>Week of 9/19/2022</p>
+          </button>
+        </h2>
+        <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Made miscellaneous shifts in webpage architecture to make implementation for page content more intuitive</dd>
+
+          <li class="mt-5"><b>Computational Model</b></li>
+            <dd> - Worked on the protein production model: Searched for parameter values, drew up model in SimBiology, edited reaction equations for result concentration diagram</dd>
+            <dd> - Drafted a plan for modeling work to complete during Fall quarter</dd>
+    
+        
+          <li class="mt-5"><b>Human Outreach</b></li>
+            <dd> - Parts page submitted (9/22/22)</dd>
+
+          <li class="mt-5"><b>Host Organisms</b></li>
+
+          <em><b>Yeast:</b></em>
+            <dd> - Innoculated Int-TRP and Int-LEU in 5mL of <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#YPD" style="text-indent: 0px" title="Yeast Extract-Peptone-Dextrose">YPD</a> each</dd>
+            <dd> - Incubated innoculated solutions at 30&#8451 for overnight growth</dd>
+            <dd> - Innoculated each of the 5mL cultures into 500 mL of YPG respectively to activate gal1 <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Promoter" style="text-indent: 0px">promoter</a></dd>
+            <dd> - Incubated innoculated solutions at 30&#8451 for overnight growth or until 2 <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#OD" style="text-indent: 0px" title="Optical Density">OD</a></dd>
+          
+          <em><b><i>E. coli</i>:</b></em>
+            <dd> - Pelleted cells and stored in 4&#8451 until following day</dd>
+            <dd> - Resuspended and lysed cells (for both <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#C41" style="text-indent: 0px">C41</a> and <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#BL21" style="text-indent: 0px">BL21</a>)</dd>
+            <dd> - Performed <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#IMAC" style="text-indent: 0px" title="Immobilized Metal-Affinity Chromatography">IMAC</a> protein purification of protein samples</dd>
+            <dd> - <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#SDS-PAGE" style="text-indent: 0px" title="Sodium Dodecyl Sulfate-PolyAcrylamide Gel Electrophoresis">SDS-PAGE</a> gel of purified protein</dd>
+          
+        </ol>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+        <br>
+            <p>Week of 9/26/2022</p>
+          </button>
+        </h2>
+        <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+        <ol class="noBP">
+          <li><b>Wiki</b></li>
+            <dd> - Finalized website color scheme and most wiki page content</dd>
+
+          <li class="mt-5"><b>Computational Model</b></li>
+            <dd> - Continued to look for appropriate parameters for the protein production model; difficult to find ribosome binding kinetics</dd>
+            <dd> - Shifted to computational modeling wiki page development</dd>
+          
+          <li class="mt-5"><b>Human Outreach</b></li>
+            <dd> - Title and Abstract submitted (9/30/22)</dd>
+
+          <li class="mt-5"><b>Host Organisms</b></li>
+          
+          <em><b>Yeast:</b></em>
+            <dd> - Pelleted cells and stored in 4&#8451 until following day</dd>
+            <dd> - Resuspended and lysed cells (for both LEU and TRP)</dd>
+            <dd> - Performed <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#IMAC" style="text-indent: 0px" title="Immobilized Metal-Affinity Chromatography">IMAC</a> protein purification of protein samples</dd>
+            <dd> - <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#SDS-PAGE" style="text-indent: 0px" title="Sodium Dodecyl Sulfate-PolyAcrylamide Gel Electrophoresis">SDS-PAGE</a> gel of purified protein</dd>
+        </ol>
+      </p>
+    </div>
+    <div class="mt-5">
+    </div>
+  </div>
+</div>
+
+
+<hr classes="my-5">
+
+
+
+
+    <h3 class="sectionHead" id="October"><b>October</b></h3>
+    <br>
+
+
+
+        
+<div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+            <p>Week of 10/3/2022</p>
+          </button>
+        </h2>
+        <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <ol class="noBP">
+                <li><b>Wiki</b></li>
+                  <dd> - Integration of content</dd>
+                  <dd> - Created classes for consistency in page structure </dd>
+                  <dd> - Style redesign; added column artwork for content pages</dd>
+                
+                <li class="mt-5"><b>Computational Model</b></li>
+                  <dd> - Finished the protein production model by circumventing ribosome binding, assuming any ribosome that can bind to mRNA will, at a rate of 1 per second</dd> 
+                  <dd> - Sent protein production model to Stony Brook University to show how their recombinant protein would act in yeast</dd>
+                  <dd> - Continued to develop computational model wiki page</dd>
+            </ol>
+          </div>
+      </div>
+  </div>
+
+  <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+            <p>Week of 10/10/2022</p>
+          </button>
+        </h2>
+        <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <ol class="noBP">
+                <li><b>Wiki</b></li>
+                  <dd> - Full team meeting to finalize wiki content </dd>
+                
+                <li class="mt-5"><b>Computational Model</b></li>
+                  <dd> - Finished uploading computational modeling figures <dd>
+                
+                <li>
+
+            <li class="mt-5"><b>Host Organisms</b></li>
+
+          <em><b><i>E. coli</i>:</b></em>
+            <dd> - Diafiltration (on previously purified <i>E. coli</i> and <i>S. cerevisiae</i> <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Ex-4" style="text-indent: 0px" title="Exendin-4">Ex-4</a>) to swap elution buffer with Tris-HCL</dd>
+            <dd> - Add <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Enterokinase" style="text-indent: 0px">enterokinase</a> to those samples and incubate overnight to cut off <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#His-Tag" style="text-indent: 0px">His-tag</a> on Ex-4</dd>
+            <dd> - Packed new <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#IMAC" style="text-indent: 0px" title="Immobilized Metal-Affinity Chromatography">IMAC</a> columns</dd>
+            <dd> - Protein purification for <a  class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#TRP1" style="text-indent: 0px">TRP1</a>, <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#LEU2" style="text-indent: 0px">LEU2</a>, <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#BL21" style="text-indent: 0px">BL21</a>, and <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#C41" style="text-indent: 0px">C41</a></dd>
+            <dd> - Batch purification on enterokinase samples was unsuccessful</dd>
+            <dd> - <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#SDS-PAGE" style="text-indent: 0px" title="Sodium Dodecyl Sulfate-PolyAcrylamide Gel Electrophoresis">SDS-PAGE</a> of new protein purification samples from <i>S. cerevisiae</i> and <i>E. coli</i></dd>
+            <dd> - Nothing showed up on SDS-PAGE so we ran a new SDS-PAGE with other samples from protein purification on Wednesday</dd>
+            <dd> - <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#Octet-Machine" style="text-indent: 0px">Octet assay</a> on previously purified <i>E. coli</i> Ex-4 and purchased <a class="glossaryRef" href="https://2022.igem.wiki/ucsc/glossary#GLP-1-R" style="text-indent: 0px" title="Glucagon-Like Peptide 1 Receptor">GLP-1 R</a></dd>
+          
+            </ol>
+          </div>
+      </div>
+  </div>
+
+
+{% endblock %}

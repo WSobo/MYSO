@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+  
+{% block title %}Collaborations{% endblock %}
+
+{% block img0url %}https://static.igem.wiki/teams/4190/wiki/ezgif-4-30147eeb02.gif{% endblock %}
+{% block img0desc %}{% endblock %}
+
+{% block header %}
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ self.img0url() }}" class="d-block" alt="{{ self.img0desc() }}">
+        <div class="carousel-caption">
+          <h1>{{ self.title() }}</h1>
+          <h4>{{ self.img0desc() }}</h4>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block sideBarEntries %}
+
+  <a class="nav-link active" aria-current="page" href="#collaboration1">Stony Brook University</a>
+  <a class="nav-link" href="#collaboration2">BOKU-Vienna and Tec Chihuahua</a>
+
+
+{% endblock %}
+
+{% block page_content %}
+    <h4 class = "sectionHead" id = "collaboration1"><strong>Stony Brook University</strong></h4>
+    <div class = "bodyParagraph">
+    <p>Our team sought out meaningful collaboration that would initiate innovation and raise the quality of our project. We met virtually with a number of other iGEM teams throughout the summer to discuss computational modeling, de-bug setbacks, compare wet lab protocols, brainstorm fundraising opportunities, and develop a deeper understanding of our projects.</p>
+    <p>Our closest partner was Stony Brook University (SBU), who aimed to address protein S deficiency by producing <a class="glossaryRef" title="Method of combining genetic information from multiple species." href="https://2022.igem.wiki/ucsc/glossary#Recombination">recombinant</a> therapeutic proteins in a microbial host. This is analogous to the methods we chose for our system, Helo. Collaboration with SBU mainly involved <a href="{{ url_for('pages', page='model') }}">computational and statistical modeling</a>. Throughout the summer, we met weekly to discuss the changes we made to our models, how to make them more meaningful to our projects, and the setbacks we encountered in the wet lab. We also began a <a class="glossaryRef" title="A free Voice-over-IP and instant messaging social platform. Communities reside on persistent chat room “servers”, which contain categorical voice and text channels for organized media sharing and communication." href="https://2022.igem.wiki/ucsc/glossary#Discord">Discord</a> channel for faster communication. During the early stages of Helo, SBU provided us with support on our protein production model. They shared their strategies on how to approach modeling, the equations they wrote to describe their system, and how they translated them into MATLAB. Since SBU also focused on synthesizing proteins, we created a protein production model for protein S in <a class="glossaryRef" title="Saccharomyces cerevisiae" href="https://2022.igem.wiki/ucsc/glossary#S_cerevisiae"><i>S. cerevisiae</i></a>, so they could compare the differences between their <a class="glossaryRef" title="Escherichia coli" href="https://2022.igem.wiki/ucsc/glossary#E_coli"><i>E. coli</i></a> host and yeast. A prototype of this model already existed due to our previous work with <i>S. cerevisiae</i>; the only aspect requiring change was the parameters. A combination of values calculated by SBU, such as transcription rate, and constants we found in the literature, such as RNA polymerase binding, tailored the model to our collaborator's goals. After these parameters were verified, we used SimBiology to generate the final protein production schematic.</p>
+    <img class="figureIMG" id="sbu" src="https://static.igem.wiki/teams/4190/wiki/e7c6bffd-c0fb-4ba2-9bd3-778e98bf2af6.jpg" alt="A screenshot taken during one of our zoom meetings with iGEM Stony Brook University">
+  <p class="landscapeImage"><strong>Pictured above are iGEM team members Kiana, Cambell, Lauren, Thiago, Elizabeth, Jonathan, and Gabino during one of our meetings over the summer with a few members of the SBU iGEM team.</strong></p>
+    </div>
+
+    <br>
+
+    <h4 class = "sectionHead" id = "collaboration2"><strong>BOKU-Vienna and Tec Chihuahua</strong></h4>
+    <div class = "bodyParagraph">
+    <p>Another partner our team met with was BOKU-Vienna, who strived to mitigate greenhouse emissions from cement manufacturing by obtaining raw materials from engineered microbes. We provided them with our <a href="{{ url_for('pages', page='model') }}">dosage-effect model</a> as an example to inspire their modeling, as their prior experience focused primarily on biology and wet lab practices. This example included our source code, acting as a template for other teams to base their modeling program after. Finally, we connected with the Tec Chihuahua team, who aim to prevent wilting in chili plants through a biofungicide produced in <i>E. coli</i>. California is home to a large community of pepper farmers, so we helped introduce them to stakeholders in this field to gain a better perspective on the impact of wilting on crop cultivation.
+    </p>
+    <img class="figureIMG" id="tecchihuahua" src="https://static.igem.wiki/teams/4190/wiki/screenshot-2022-07-06-165318.png" alt="A screenshot taken during one of our zoom meetings with iGEM Tech Chihuahua">
+  <p class="landscapeImage"><strong>iGEM team members Kiana, Cambell, Lauren, Thiago, Elizabeth, Jonathan, and Gabino meeting with iGEM Tec Chihuahua to discuss human practices and outreach.</strong></p>
+    </div>
+
+<br>
+
+{% endblock %} 
+
+<!-- 
+<p> Our team sought for meaningful collaboration that would initiate innovation and raise the quality of our project. We met virtually with a number of other iGEM teams throughout the duration of our project to discuss computational modeling, de-bug setbacks and compare wet lab protocols, brainstorm fundraising opportunities and develop a deeper understanding of our projects.
+
+Our closest partner was Stony Brook University (SBU) who aimed to address protein S deficiency by producing recombinant proteins in a microbial host, which is analogous to the methods we chose for our system. Collaboration with SBU mainly involved the computational and statistical modeling component of our respective projects. During the early stages of our modeling development, SBI provided resources and a guide to protein production. Throughout the summer, we met weekly to discuss the changes we made to our models, how to make our models meaningful to our respective projects, and troubleshoot the setbacks we encountered in our wet lab. We also began a discord channel for faster communication. As SBU focused primarily on modeling protein production, we are providing a protein production model in yeast so that they are able to compare the difference in their synthetic production between E.coli and yeast. 
+
+Our team also provided a team in Vienna our dosage effect model to help them get started on modeling as they are primarily biology and wet lab centric and sent the team in Chihuahua resources for further research on the pepper disease they aimed to combat.  
+
+We'd also like to thank Dr. Ben Dover and Dr. Hugh Janus -->
+

@@ -1,0 +1,387 @@
+{% extends "layout.html" %}
+  
+{% block title %}Contribution{% endblock %}
+
+{% block img0url %}https://static.igem.wiki/teams/4190/wiki/banner-gif/purpledripdrop.gif{% endblock %}
+{% block img0desc %}{% endblock %}
+
+{% block header %}
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ self.img0url() }}" class="d-block" alt="{{ self.img0desc() }}">
+        <div class="carousel-caption">
+          <h1>{{ self.title() }}</h1>
+          <h4>{{ self.img0desc() }}</h4>
+        </div>
+      </div>
+    </div>
+    
+{% endblock %}
+{% block sideBarEntries %}
+
+  <a class="nav-link active" aria-current="page" href="#contribution1">Adaptive Modeling Software</a>
+  <a class="nav-link" href="#contribution2">Parts Collection</a>
+  <a class="nav-link" href="#contribution3">Basic Parts</a>
+  <a class="nav-link" href="#contribution4">Composite Parts</a>
+  <a class="nav-link" href="#Citation-Accordion">Citations</a>
+
+{% endblock %}
+{% block page_content %}
+
+    <h4 class="sectionHead" id = "contribution1"><strong>Adaptive Modeling Software</strong></h4>
+    <div class = "bodyParagraph">
+    <p>The competitive relationship between <a class="glossaryRef" title="Exendin-4" href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> and <a class="glossaryRef" title="Gucagon-Like Peptide 1" href="https://2022.igem.wiki/ucsc/glossary#GLP-1">GLP-1</a> is unique in that both proteins cause the same downstream effect: insulin secretion from pancreatic <a class="glossaryRef" title="Beta-Cell" href="https://2022.igem.wiki/ucsc/glossary#Beta-Cell">beta cell</a> islets [<a class="citation" href="#Citation-Accordion">1</a>]. Extensive research went into selecting an appropriate equation to provide a stable foundation while building our competitive binding model. To assist future iGEM teams studying similar competitive binding relationships, we programmed our model to be adaptive and open source. Anyone can download our code and generate custom graphs by changing the input values to match their protein <a class="glossaryRef" title="Dissociation Constant" href="https://2022.igem.wiki/ucsc/glossary#Dissociation-Constant">dissociation constants</a>, initial concentrations, and binding formulas. Features such as panel formatting, EC<sub>50</sub> plotting, and legend configuration are handled automatically.
+To learn more about our computational models, see the <a class="citation" style="display: inline; "href="{{ url_for('pages', page='model') }}">modeling</a> page.</p>
+    </div>
+    <br>
+
+    <h4 class="sectionHead" id = "contribution2"><strong>Parts Collection</strong></h4>
+    <div class = "bodyParagraph">
+    <p>Our project required the development of twenty-five new basic and composite genetic parts for the expression of Ex-4 in both <a class="glossaryRef" title="S_cerevisiae" href="https://2022.igem.wiki/ucsc/glossary#S_cerevisiae"><i>S. cerevisiae</i></a> and <a class="glossaryRef" title="E_coli" href="https://2022.igem.wiki/ucsc/glossary#E_coli"><i>E. coli</i></a>.  Future iGEM teams interested in increasing the oral bioavailability of Exendin-4 as a T2D therapeutic can use and build upon the parts we created and submitted. The basic parts can be used in more general applications for teams looking to assemble plasmids for recombinant protein production. The parts submitted for <i>S. cerevisiae</i> use the <a class="glossaryRef" title="MoClo" href="https://2022.igem.wiki/ucsc/glossary#MoClo">Modular Cloning (MoClo)</a> library, allowing those interested in assembling a plasmid via MoClo to use parts we designed and verified.</p>
+    
+    <p>Our protein transcribing gene inserts generally include a <a class="glossaryRef" title="His-Tag" href="https://2022.igem.wiki/ucsc/glossary#His-Tag">6xHistidine-Tag</a>, glycine-serine amino acid linker, protease <a class="glossaryRef" title="Cut-site" href="https://2022.igem.wiki/ucsc/glossary#Cut-site">cut site</a>, and codon optimized Ex-4 sequence. In <i>E. coli</i>, the protein was expressed by the pET28 <a class="glossaryRef" title="Plasmid" href="https://2022.igem.wiki/ucsc/glossary#Plasmid">plasmid</a> whereas for <i>S. cerevisiae</i> we inserted our gene directly into the genome at either the LEU2 site or the TRP1 site as two separate testing points. 
+Additionally, we constructed a gene insert for pET28 to express the truncated <a class="glossaryRef" title="GLP-1 R" href="https://2022.igem.wiki/ucsc/glossary#GLP-1-R">GLP-1 R</a> binding domain to test the functionality of our Ex-4 protein. The parts we designed for this project are listed in the tables below:
+</p>
+</div>
+<h4 class="sectionHead" id = "contribution3"><strong>Basic Parts</strong></h4>
+<div class = "bodyParagraph">
+    <table class = "table table-dark tableDarkClass">
+      <tr>
+        <th>Part Name</th>
+        <th>Part Number</th>
+        <th>Part Type</th>
+        <th>Description</th>
+        <th>Designer</th>
+        <th>Length (bp)</th>
+      </tr>
+      <tr>
+        <td>pET28:GFP</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190000">BBa_K4190000</a></td>
+        <td>Plasmid Backbone</td>
+        <td>Vector for gene insertion and subsequent protein expression</td>
+        <td>Shis, DL & Bennett, MR.</td>
+        <td>5993</td>
+      </tr>
+      <tr>
+        <td>Shine-Dalgarno Sequence</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190001">BBa_K4190001</a></td>
+        <td>RBS</td>
+        <td>Ribosome binding sequence to ensure genetic code is read in frame</td>
+        <td>Shis, DL & Bennett, MR.</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>6xHis-Tag (<i>E. coli</i>)</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190002">BBa_K4190002</a></td>
+        <td>Tag</td>
+        <td>Histidine tag attached to Ex-4 to conduct immobilized metal affinity chromatography. Codon optimized for <i>E. coli</i></td>
+        <td>Zoe Petroff</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>6xHis-Tag (<i>S. cerevisiae</i>)</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190003">BBa_K4190003</a></td>
+        <td>Tag</td>
+        <td>Histidine tag attached to Ex-4 to conduct immobilized metal affinity chromatography. Codon    optimized for <i>S. cerevisiae</i>.</td>
+        <td>Neo Peng</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>10aa GS Linker (<i>E. coli</i>)</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190004">BBa_K4190004</a></td>
+        <td>Protein Domain</td>
+        <td>Links His-tag to Ex-4 protein. Codon optimized for <i>E. coli</i></td>
+        <td>Zoe Petroff</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>10aa GS Linker (<i>S. cerevisiae</i>)</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190005">BBa_K4190005</a></td>
+        <td>Protein Domain</td>
+        <td>Links His-tag to Ex-4 protein. Codon optimized for <i>S. cerevisiae</i></td>
+        <td>Zoe Petroff</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Enterokinase</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190006">BBa_K4190006</a></td>
+        <td>Other</td>
+        <td>Cut site for eventual removal of His-tag form Ex-4</td>
+        <td>Zoe Petroff</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Ex-4 Sequence Codon Optimized for <i>E. coli</i></td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190007">BBa_K4190007</a></td>
+        <td>Coding Region</td>
+        <td>Protein coding region for expressing Ex-4 in <i>E. coli</i></td>
+        <td>Zoe Petroff</td>
+        <td>117</td>
+      </tr>
+      <tr>
+        <td>GGA Flagged Backbone Primer Forward</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190008">BBa_K4190008</a></td>
+        <td>Primer</td>
+        <td>Flagged primer to add BsaI site to pET28 for GGA</td>
+        <td>Zoe Petroff</td>
+        <td>47</td>
+      </tr>
+      <tr>
+        <td>GGA Flagged Backbone Primer Reverse</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190009">BBa_K4190009</a></td>
+        <td>Primer</td>
+        <td>Flagged primer to add BsaI site to pET28 for GGA</td>
+        <td>Zoe Petroff</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>GAL1 Promoter Plasmid</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190010">BBa_K4190010</a></td>
+        <td>Plasmid</td>
+        <td>MoClo part containing GAL1 promoter for GGA</td>
+        <td>Lee et al.</td>
+        <td>2204</td>
+      </tr>
+      <tr>
+        <td>PGK Terminator Plasmid</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190011">BBa_K4190011</a></td>
+        <td>Plasmid</td>
+        <td>MoClo part containing PGK terminator for GGA</td>
+        <td>Lee et al.</td>
+        <td>1900</td>
+      </tr>
+      <tr>
+        <td>mg-Int-leu2-kan_1420 Backbone</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190012">BBa_K4190012</a></td>
+        <td>Plasmid Backbone</td>
+        <td>Vector for gene insertion and subsequent protein expression </td>
+        <td>Kamakaka, R</td>
+        <td>5609</td>
+      </tr>
+      <tr>
+        <td>mg-int-trp1-hyg_1432-4a Backbone</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190013">BBa_K4190013</a></td>
+        <td>Plasmid Backbone</td>
+        <td>Vector for gene insertion and subsequent protein expression</td>
+        <td>Kamakaka, R</td>
+        <td>5412</td>
+      </tr>
+      <tr>
+        <td>Ex-4 Sequence Codon Optimized for <i>S. cerevisiae</i></td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190014">BBa_K4190014</a></td>
+        <td>Coding Region</td>
+        <td>Protein coding region for expressing Ex-4 in <i>S. cerevisiae</i></td>
+        <td>Zoe Petroff, Neo Peng</td>
+        <td>117</td>
+      </tr>
+      <tr>
+        <td>EBP10 Half-life Extender</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190015">BBa_K4190015</a></td>
+        <td>Coding Region</td>
+        <td>Extends half life of Ex-4 <i>in vivo</i></td>
+        <td>Jung, SJ  et al.</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>TEV Cut Site</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190016">BBa_K4190016</a></td>
+        <td>Other</td>
+        <td>Cut site for eventual removal of His-tag</td>
+        <td>Zoe Petroff</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>GLP1-R Gene Insert Optimized for <i>E. coli</i></td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190017">BBa_K4190017</a></td>
+        <td>Coding Region</td>
+        <td>Protein coding region for expressing GLP-1R in <i>E. coli</i></td>
+        <td>Zoe Petroff</td>
+        <td>365</td>
+      </tr>
+    </table>
+  </div>
+  
+    <h4 class="sectionHead" id = "contribution4"><strong>Composite Parts</strong></h4>
+    <div class = "bodyParagraph">
+    <table class = "table table-dark tableDarkClass">
+      <tr>
+        <th>Part Name</th>
+        <th>Part Number</th>
+        <th>Part Type</th>
+        <th>Description</th>
+        <th>Basic Parts included</th>
+        <th>Designer</th>
+        <th>Length (bp)</th>
+      </tr>
+      <tr>
+        <td>Ex-4 Gene Insert for <i>E. coli</i></td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190018">BBa_K4190018</a></td>
+        <td>Composite</td>
+        <td>His-tagged Exendin-4 coding region to be inserted into a plasmid via GGA and expressed in <i>E. coli</i></td>
+        <td><pre>1. Kozak Sequence
+2. 6xHis-Tag
+3. 10aa GS Linker
+4. Enterokinase 
+   Cut site
+5. Ex-4 sequence 
+   codon 
+   optimized 
+   for <i>E. coli</i>
+6. BsaI site</pre></td>
+        <td>Zoe Petroff</td>
+        <td>250</td>
+      </tr>
+      <tr>
+        <td>Ex-4 Gene Insert for <i>S. cerevisiae</i></td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190019">BBa_K4190019</a></td>
+        <td>Composite</td>
+        <td>His-tagged Exendin-4 coding region to be inserted into a plasmid via GGA and expressed in <i>S. cerevisiae</i></td>
+        <td><pre>1. 6xHis-Tag
+2. 10aa GS Linker
+3. Enterokinase 
+   cut site
+4. Ex-4 sequence 
+   codon 
+   optimized 
+   for 
+   <i>S. cerevisiae</i>
+5. EBP10 half 
+   life 
+   extender
+6. BsaI site</pre></td>
+        <td>Zoe Petroff, Neo Peng</td>
+        <td>369</td>
+      </tr>
+      <tr>
+        <td>GLP-1R Gene Insert in <i>E. coli</i></td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190020">BBa_K4190020</a></td>
+        <td>Composite</td>
+        <td>His-tagged GLP-1R coding region to be inserted into a plasmid via GGA and expressed in <i>E. coli</i>. Expresses only surface binding site.</td>
+        <td><pre>
+1. Kozak Sequence
+2. 6xHis-Tag
+3. 10aa GS Linker
+4. TEV Cut site
+5. GLP-1R 
+   sequence 
+   codon 
+   optimized 
+   for <i>E. coli</i>
+6. BsaI site</pre></td>
+        <td>Zoe Petroff</td>
+        <td>505</td>
+      </tr>
+      <tr>
+        <td>Complete Reconstructed Plasmid (pET28:Ex4)</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190021">BBa_K4190002</a></td>
+        <td>Plasmid</td>
+        <td>His-tagged Exendin-4 expression system in <i>E. coli</td>
+        <td><pre>
+1. Kozak Sequence
+2. 6xHis-Tag
+3. 10aa GS Linker
+4. Enterokinase 
+   Cut site
+5. Ex-4 sequence 
+   codon 
+   optimized 
+   for <i>E. coli</i>
+   pET28:GFP</pre></td>
+        <td>Zoe Petroff</td>
+        <td>5395</td>
+      </tr>
+      <tr>
+        <td>Complete Reconstructed Plasmid (mg-Int-leu2-kan_1420:Ex4)</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190022">BBa_K4190002</a></td>
+        <td>Plasmid</td>
+        <td>His-tagged Exendin-4 expression system with integration at <i>S. cerevisiae</i> Leucine homology sites within the genome</td>
+        <td><pre>
+1. 6xHis-Tag
+2. 10aa GS Linker
+3. Enterokinase 
+   cut site
+4. Ex-4 sequence 
+   codon 
+   optimized 
+   for 
+   <i>S. cerevisiae</i>
+5. EBP10 half 
+   life extender
+6. GAL1 Promoter
+7. PGK Terminator
+   Mg-Int-leu2
+   -kan_1420 
+   backbone</pre></td>
+        <td>Zoe Petroff, Neo Peng </td>
+        <td>5699</td>
+      </tr>
+      <tr>
+        <td>Complete Reconstructed Plasmid (mg-int-trp1-hyg_1432-4a:Ex4)</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190023">BBa_K4190023</a></td>
+        <td>Plasmid</td>
+        <td>His-tagged Exendin-4 expression system with integration at <i>S. cerevisiae</i> tryptophan homology sites within the genome</td>
+        <td><pre>
+1. 6xHis-Tag
+2. 10aa GS Linker
+3. Enterokinase 
+   cut site
+4. Ex-4 sequence 
+   codon 
+   optimized 
+   for 
+   <i>S. cerevisiae</i>
+5. EBP10 half 
+   life extender
+6. GAL1 Promoter
+7. PGK Terminatior
+   Mg-int-trp1
+   -hyg_1432-4a 
+   backbone</pre></td>
+        <td>Zoe Petroff, Neo Peng </td>
+        <td>5502</td>
+      </tr>
+      <tr>
+        <td>Complete Reconstructed Plasmid (pET28:GLP1R)</td>
+        <td><a class="citation" href="http://parts.igem.org/Part:BBa_K4190024">BBa_K4190024</a></td>
+        <td>Plasmid</td>
+        <td>His-tagged GLP-1R binding site expression system in <i>E. coli</i></td>
+        <td><pre>
+1. Kozak Sequence
+2. 6xHis-Tag
+3. 10aa GS Linker
+4. TEV Cut site
+5. GLP-1R 
+   sequence 
+   codon 
+   optimized 
+   for E. <i>E. coli</i>
+   pET28:GFP</pre></td>
+        <td>Zoe Petroff</td>
+        <td>5650</td>
+      </tr>
+    </table>
+  </div>
+  
+  <br>
+ 
+ <div class="accordion bg-dark my-5" id="Citation-Accordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="Citation-AccordionHeading1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCitations" aria-expanded="false" aria-controls="collapseCitations">
+          Citations
+        </button>
+      </h2>
+      <div id="collapseCitations" class="accordion-collapse collapse" aria-labelledby="Citation-AccordionHeading1" data-bs-parent="#Citation-Accordion">
+        <div class="accordion-body">
+          <ol class="noBP">
+            <li id="citation1">[1] J. J. Holst, “The physiology of glucagon-like peptide 1,” <i>Physiol Rev</i>, vol. 87, no. 4, pp. 1409–1439, Oct. 2007,  <a class="citation" href="https://journals.physiology.org/doi/full/10.1152/physrev.00034.2006"> doi: 10.1152/physrev.00034.2006</a>.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+{% endblock %}

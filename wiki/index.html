@@ -1,37 +1,82 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MYSO Research - Home</title>
-	<!-- Add any additional stylesheets or scripts here -->
-</head>
-<body>
-	<!-- Add your navigation bar here -->
-	<!-- The navigation bar should include links to your Home, Research, Contacts, and Data pages -->
-	
-	<!-- Add your home page content here -->
-	<!-- This should include a summary of your project -->
-	<!-- You can use headings, paragraphs, and lists to organize your content -->
-	<h1>Welcome to MYSO Research</h1>
-	<p>We are a team of researchers at UCSC studying the use of fungi to degrade plastic. Our goal is to develop a sustainable solution for plastic waste management.</p>
-	
-	<!-- Add your research page content here -->
-	<!-- This should include information about your research, including methods, results, and conclusions -->
-	<h2>Our Research</h2>
-	<p>Here you can find information about our research methods, results, and conclusions.</p>
-	
-	<!-- Add your contacts page content here -->
-	<!-- This should include contact information for your team members, including email addresses and social media profiles -->
-	<h2>Contact Us</h2>
-	<p>For inquiries, please contact us at <a href="mailto:myso@ucsc.edu">myso@ucsc.edu</a>.</p>
-	
-	<!-- Add your data page content here -->
-	<!-- This should include any data or figures related to your research -->
-	<h2>Data</h2>
-	<p>Here you can find any data or figures related to our research.</p>
-	
-	<!-- Add your footer here -->
-	<!-- The footer should include any relevant copyright information and links to any necessary legal disclaimers -->
-</body>
-</html>
+{% extends "layout.html" %}
+
+
+{% block head %}
+<link href="{{ url_for('static', filename = 'home.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block img0url %}https://static.igem.wiki/teams/4190/wiki/banner-photos-cause-we-don-t-have-enough-gifs/helo-wiki-home-banner.svg{% endblock %} <!-- https://static.igem.wiki/teams/4190/wiki/banner-photos-cause-we-don-t-have-enough-gifs/helo-wiki-banner.jpg -->
+
+{% block header %}
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ self.img0url() }}" class="d-block" alt="Gila Monster Skin texture behind the HELO logo & project title.">
+        <div class="carousel-caption">
+          <h1> </h1>
+          <h4>Accessible Type 2 Diabetes Medication Through Stable Expression of Exendin-4 in <i>S. cerevisiae</i></h4>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+{% block page_content %}
+
+<div class="fade-in-image">
+  <img src="https://static.igem.wiki/teams/4190/wiki/figures/homesreen-img1.png">
+</div>
+
+<div class="fade-in-image">
+  <img src="https://static.igem.wiki/teams/4190/wiki/banner-photos-cause-we-don-t-have-enough-gifs/screen-shot-2022-10-10-at-03-14-20.png">
+</div>
+
+<div class="fade-in-image">
+  <img src="https://static.igem.wiki/teams/4190/wiki/figures/homescreen-img2.png">
+</div>
+
+<div class="fade-in-image">
+  <img src="https://static.igem.wiki/teams/4190/wiki/screen-shot-2022-10-09-at-18-24-34.png">
+</div>
+
+<div class="fade-in-image">
+  <img src="https://static.igem.wiki/teams/4190/wiki/screen-shot-2022-10-09-at-18-25-10.png">
+</div>
+
+<div class="fade-in-image">
+  <img id="homeClick1" src="https://static.igem.wiki/teams/4190/wiki/figures/clickheloabove.png">
+</div>
+
+<div class="fade-in-image">
+  <a id="homeClick2Container" class="fromCenter" href="{{ url_for('pages', page='description') }}">
+     <img id="homeClick2" title="Go to Project Description" src="https://static.igem.wiki/teams/4190/wiki/icons/helo-logo-perfected-white.svg">
+  </a>
+</div>
+<br>
+<br>
+<br>
+
+<div class="accordion bg-dark my-5 accordianMargin" id="Citation-Accordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="Citation-AccordionHeading1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCitations" aria-expanded="false" aria-controls="collapseCitations">
+          Citations
+        </button>
+      </h2>
+      <div id="collapseCitations" class="accordion-collapse collapse" aria-labelledby="Citation-AccordionHeading1" data-bs-parent="#Citation-Accordion">
+        <div class="accordion-body">
+          <ol class="noBP">
+            <li id="citation1">[1] “Diabetes.” <a class = "citation" href = "https://www.who.int/health-topics/diabetes">https://www.who.int/health-topics/diabetes</a> (accessed Oct. 08, 2022).</li>
+            <li id="citation2">[2] “The top 10 causes of death.”  
+ <a class="citation" href="https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death">https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death</a> (accessed Oct. 10, 2022).</li>
+            <li id="citation3">[3]  “Byetta Prices, Coupons & Savings Tips - GoodRx.”
+<a class="citation" href="https://www.goodrx.com/byetta">https://www.goodrx.com/byetta</a> (accessed Oct. 07, 2022).</li>
+
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

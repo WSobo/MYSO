@@ -1,0 +1,1460 @@
+{% extends "layout.html" %}
+
+{% block head %}<style>
+#sideNavBar {
+    display: inline-flex;
+}
+#upToTopSVG {
+  display: none;
+}
+</style>{% endblock %}
+  
+{% block title %}Protocols{% endblock %}
+
+{% block img0url %}https://static.igem.wiki/teams/4190/wiki/banner-gif/ezgif-1-ee2bb727b3.gif{% endblock %}
+{% block img0desc %}{% endblock %}
+
+{% block header %}
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ self.img0url() }}" class="d-block" alt="{{ self.img0desc() }}">
+        <div class="carousel-caption mb-5">
+          <h1>{{ self.title() }}</h1>
+          <h4>{{ self.img0desc() }}</h4>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+{% block page_content %}
+
+<br>
+<br>
+<br>
+
+
+
+
+<div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseX" aria-expanded="false" aria-controls="collapseX">
+            PCR Product Gel Electrophoresis
+          </button>
+        </h2>
+        <div id="collapseX" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> Analyze the size of DNA fragments.
+            <ul class="mt-5"> 
+              <ul> 
+                <li><h5>Equipment:</h5></li> 
+              <ul> 
+                <li>Casting Tray</li> 
+                <li>Well Combs</li> 
+                <li>Voltage Source</li> 
+                <li>Gel Box</li> 
+                <li>UV light source</li> 
+                <li>Microwave</li> 
+                <li>Analytical Balance</li> 
+                <li>Weight Boat</li> 
+              </ul> 
+            </ul> 
+            <br>
+            <ul> 
+              <li><h5>Materials:</h5></li> 
+              <ul> 
+              <li>1x <abbr title="Tris-borate-EDTA">TBE</abbr> Buffer</li> 
+              <li>Agarose</li> 
+              <li>20,000x Apex DNA Safe Stain</li> 
+              <li>DNA Ladder</li> 
+              <li>DNA Sample</li> 
+              <li>6x Purple Loading Dye</li> 
+              </ul> 
+            </ul> 
+            <li class="noBP mt-5 mb-1"><h3>Protocol:</h3></li> 
+            <ol> 
+              <li>Using the weight boat, measure 1g of Agarose and add it to 100mL of 1x TBE Buffer.</li> 
+              <li>Microwave it in rounds of 30 seconds until Agar is fully dissolved. Swirl in between rounds.</li> 
+              <li>Let solution cool down to around 50&ordm;C (where you can comfortably place your hand on it).</li> 
+              <li>Add 5&micro;L of 20,000x Apex DNA Safe Stain into solution</li> 
+              <li>Place comb into the wells of the casting tray. Pour solution inside the tray (and wait untill it solidifies).</li> 
+              <li>Pour 1x TBE Buffer into Gel Box until the gel is fully submerged.</li> 
+              <li>Load samples into each well (2&micro;L 6x Loading Dye + 10&micro;L of DNA sample). Close lid and plug in the electrodes (make sure samples will run towards the red electrode).</li> 
+              <li>Turn on voltage source to around 115V (5V per cm of the distance between electrodes).</li> 
+              <li>After running samples, place gel under a UV source to visualize your results.</li> 
+            </ol> 
+            </ul> 
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Touchdown Colony PCR for Ex-4 in&nbsp<i>E. coli</i>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading2" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+    <b>Purpose:</b> Colony PCR is utilized in our experiment in order to confirm the presence of Exendin-4 insert in the plasmid construct of transformed DH10B and C41 strains of <i>E. coli</i> colonies. 
+    <ul class="mt-5"> 
+     <ul> 
+      <li><h5>Equipment:</h5></li> 
+      <ul> 
+       <li>Thermocycler</li> 
+      </ul> 
+     </ul> 
+     <br>
+     <ul> 
+      <li><h5>Materials:</h5></li> 
+      <ul> 
+       <li>One Taq 2x Master Mix with Standard Buffer (NEB)</li> 
+       <li>Petri dish containing transfected <i>E. coli</i> colonies</li> 
+       <li>Colony Picker</li> 
+       <li>Forward Primer (2.5&micro;M)</li> 
+       <li>Reverse Primer (2.5&micro;M)</li> 
+       <li>MiliQ Water</li> 
+      </ul> 
+     </ul> 
+     <li class="noBP mt-5 mb-1"><h3>Protocol:</h3></li> 
+     <ol> 
+      <li>Take petri dish with grown transformation colonies.</li> 
+      <ul> 
+       <li>circle and label chosen colonies on petri dish to indicate which colonies were chosen for cPCR.</li> 
+      </ul> 
+      <li>Aliqout 10&micro;L of MiliQ water into respective PCR. tube.</li> 
+      <ul> 
+       <li>One tube for each chosen colony.</li> 
+       <li>Make sure to label each PCR tube for its respective colony.</li> 
+      </ul> 
+      <li>Using a colony picker, gently touch a colony and suspend in the 10&micro;L water PCR tube.</li> 
+      <ul> 
+       <li>repeat for each colony.</li> 
+      </ul> 
+      <li>Prepare a PCR Master Mix in 1.5mL microcentrifuge tube for a 25&micro;L reaction.</li> 
+      <table class="table table-dark"> 
+       <thead> 
+        <tr> 
+         <th scope="col"></th> 
+         <th scope="col">Reagents</th> 
+         <th scope="col">Volume (&micro;L)</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+        <tr> 
+         <td>1 </td>
+         <td>Forward Primer (2.5mM) </td>
+         <td>2 </td>
+        </tr> 
+        <tr> 
+         <td>2 </td>
+         <td>Reverse Primer (2.5mM) </td>
+         <td>2 </td>
+        </tr> 
+        <tr> 
+         <td>3 </td>
+         <td>One Taq 2x Master Mix </td>
+         <td>12.5 </td>
+        </tr> 
+        <tr> 
+         <td>4 </td>
+         <td>MiliQ Water </td>
+         <td>7.5 </td>
+        </tr> 
+        <tr> 
+         <td>5 </td>
+         <td>Colony Sample </td>
+         <td>1 </td>
+        </tr> 
+        <tr> 
+         <td> </td>
+         <th>TOTAL:</th> 
+         <th>25</th> 
+        </tr> 
+       </tbody> 
+      </table> 
+      <li>Tap sides of tube to ensure proper mixing of contents.</li> 
+      <li>For a positive control, add 1&micro;L of pET28-GFP plasmid (52.9 ng/&micro;L) into a microcentrifuge tube with PCR master mix as shown above.</li> 
+      <li>Using a thermocycler, amplify nucleic acids using the example protocol. It is important to note that the primer annealing temperature is specific to the primers utilized. <a href="https://tmcalculator.neb.com/#!/main">NEB Primer Annealing Temperature Calculator</a> was used to determine the ideal temperature. The extension time is also dependent upon length of desired amplicon, OneTaq extends at a rate of about 1 kb per minute.</li> 
+      <table class="table table-dark"> 
+       <thead> 
+        <tr> 
+         <th scope="col">Step:</th> 
+         <th scope="col">Temperature: (&ordm;C)</th> 
+         <th scope="col">Time: (seconds)</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+        <tr> 
+         <td>Denaturing </td>
+         <td>94 </td>
+         <td>30 </td>
+        </tr> 
+        <tr> 
+         <td>Annealing </td>
+         <td>59 </td>
+         <td>45 </td>
+        </tr> 
+        <tr> 
+         <td>Extension </td>
+         <td>68 </td>
+         <td>20 </td>
+        </tr> 
+        <tr> 
+         <th>Repeat steps above 10x while decreasing the annealing temperature 0.5&ordm;C per cycle!</th> 
+        </tr> 
+        <tr> 
+         <td>Denaturing </td>
+         <td>94 </td>
+         <td>30 </td>
+        </tr> 
+        <tr> 
+         <td>Annealing </td>
+         <td>54 </td>
+         <td>45 </td>
+        </tr> 
+        <tr> 
+         <td>Extension </td>
+         <td>68 </td>
+         <td>20 </td>
+        </tr> 
+        <tr> 
+         <th>Repeat steps above 20x!</th> 
+        </tr> 
+        <tr> 
+         <td>Safety Extension </td>
+         <td>68 </td>
+         <td>300 (5 min) </td>
+        </tr> 
+        <tr> 
+         <td>Hold </td>
+         <td>4 </td>
+         <td>∞ </td>
+        </tr> 
+       </tbody> 
+      </table> 
+      <li>Run Gel Electrophoresis using samples from Colony PCR to confirm that our GLP-1 R plasmid insert has the expected size. <b>Expected size: 605 bp.</b></li> 
+     </ol> 
+    </ul> 
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Touchdown Inverse PCR
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> Inverse PCR was done in order to obtain a linear backbone where we can later use it to construct our desired plasmid. By linearizing the pET-28:GFP plasmid using designed primers, we removed the GFP portion out, obtaining pET-28 as a product. Also, when linearizing the backbone, we inserted two BsaI sites in both ends. Hence, they can bind to the matching sequences that we designed in our insert in order to build the desired plasmid. 
+    <ul class="mt-5"> 
+     <ul> 
+      <li><h5>Equipment:</h5></li> 
+      <ul> 
+       <li>Thermocycler</li> 
+      </ul> 
+     </ul> 
+     <br>
+     <ul> 
+      <li><h5>Materials:</h5></li> 
+      <ul> 
+       <li>Q5 High-Fidelity 2x Master Mix (NEB)</li> 
+       <li>Forward Primer (2.5&micro;M)</li> 
+       <li>Reverse Primer (2.5&micro;M)</li> 
+       <li>pET-28:GFP Template Plasmid</li> 
+       <li>MiliQ Water</li> 
+      </ul> 
+     </ul> 
+     <li class="noBP mt-5 mb-1"><h3>Protocol:</h3></li> 
+     <ol> 
+      <li>Prepare sample Master mix:</li> 
+      <table class="table table-dark"> 
+       <thead> 
+        <tr> 
+         <th scope="col"></th> 
+         <th scope="col">Reagents</th> 
+         <th scope="col">Volume (&micro;L)</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+        <tr> 
+         <td>1 </td>
+         <td>Forward Primer (2.5mM) </td>
+         <td>10 </td>
+        </tr> 
+        <tr> 
+         <td>2 </td>
+         <td>Reverse Primer (2.5mM) </td>
+         <td>10 </td>
+        </tr> 
+        <tr> 
+         <td>3 </td>
+         <td>Q5 High-Fidelity 2x Master Mix </td>
+         <td>25 </td>
+        </tr> 
+        <tr> 
+         <td>4 </td>
+         <td>MiliQ Water </td>
+         <td>4 </td>
+        </tr> 
+        <tr> 
+         <td>5 </td>
+         <td>pET-28:GFP Template Plasmid </td>
+         <td>1 </td>
+        </tr> 
+        <tr> 
+         <td> </td>
+         <th>TOTAL:</th> 
+         <th>50</th> 
+        </tr> 
+       </tbody> 
+      </table> 
+      <li>Place sample into thermocycler under the following conditions:</li> 
+      <table class="table table-dark"> 
+       <thead> 
+        <tr> 
+         <th scope="col">Step:</th> 
+         <th scope="col">Temperature: (&ordm;C)</th> 
+         <th scope="col">Time: (seconds)</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+        <tr> 
+         <td>Denaturing </td>
+         <td>98 </td>
+         <td>30 </td>
+        </tr> 
+        <tr> 
+         <td>Annealing </td>
+         <td>70 </td>
+         <td>30 </td>
+        </tr> 
+        <tr> 
+         <td>Extension </td>
+         <td>72 </td>
+         <td>150 (2.5 min) </td>
+        </tr> 
+        <tr> 
+         <th>Repeat steps above 10x while decreasing the annealing temperature 0.5&ordm;C per cycle!</th> 
+        </tr> 
+        <tr> 
+         <td>Denaturing </td>
+         <td>98 </td>
+         <td>30 </td>
+        </tr> 
+        <tr> 
+         <td>Annealing </td>
+         <td>67 </td>
+         <td>30 </td>
+        </tr> 
+        <tr> 
+         <td>Extension </td>
+         <td>72 </td>
+         <td>150 (2.5 min) </td>
+        </tr> 
+        <tr> 
+         <th>Repeat steps above 20x!</th> 
+        </tr> 
+        <tr> 
+         <td>Safety Extension </td>
+         <td>72 </td>
+         <td>120 (2 min) </td>
+        </tr> 
+        <tr> 
+         <td>Hold </td>
+         <td>4 </td>
+         <td>∞ </td>
+        </tr> 
+       </tbody> 
+      </table> 
+      <li>Run Gel Electrophoresis using samples from Inverse PCR to confirm that our pET-28:GFP Template Plasmid was successfully linearized. <b>Expected size: 5273 bp.</b></li> 
+     </ol> 
+    </ul> 
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Dpn1 Digestion &amp; Heat Treatment
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+    <b>Purpose:</b> Cleaning up Inverse PCR reactions. Since we used a pET-28:GFP template to obtain our pET-28 linearized backbone, that template is still present in the solution. Hence, in the future transformation step, there is a chance that the GFP plasmid is transformed while our desired pET-28:GLP-1 R plasmid is not. To avoid that, we treated the Inverse PCR sample with Dpn1 Restriction Enzyme of type IIM. This Restriction Enzyme cleaves methyladed DNA and since only our template (pET-28:GFP) is methylated, it assisted us in avoiding this issue. After that we performed a Heat Treatment so that the Dpn1 gets deactivated, therefore preventing it from cleaving further DNA. 
+    <ul class="mt-5"> 
+     <ul> 
+      <li><h5>Equipment:</h5></li> 
+      <ul> 
+       <li>Incubator</li> 
+       <li>Hot Plate Water Bath</li> 
+      </ul> 
+      <br>
+      <li><h5>Materials:</h5></li> 
+      <ul> 
+       <li>Dpn1 Restriction Enzyme</li> 
+       <li>Inverse PCR samples (linearized backbone + template)</li> 
+      </ul> 
+     </ul> 
+     <li class="noBP mt-5 mb-1"><h3>Dpn1 Digestion Protocol:</h3></li> 
+     <ol> 
+      <li>Added 1&micro;L of DpnI to each 50&micro;L microcentrifuge tube (Inverse PCR product).</li> 
+      <li>Incubate tubes at 37&ordm;C for 1 hour.</li> 
+     </ol> 
+     <li class="noBP mt-5 mb-1"><h3>Heat Treatment Protocol:</h3></li> 
+     <ol> 
+      <li>Incubate samples at 80&ordm;C for 20 minutes.</li> 
+     </ol> 
+    </ul> 
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Golden Gate Assembly of Ex-4 in&nbsp<i>E. coli</i>
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> After obtaining a successful linearized template plasmid (pET-28), we performed a Golden Gate reaction that assembled our designed Exendin-4 Plasmid with the pET-2828 backbone. Hence, our desired plasmid was constructed. 
+    <ul class="mt-5"> 
+     <ul> 
+      <li><h5>Equipment:</h5></li> 
+      <ul> 
+       <li>Thermocycler</li> 
+      </ul> 
+     </ul> 
+     <br>
+     <ul> 
+      <li><h5>Materials:</h5></li> 
+      <ul> 
+       <li>BsaI-HFv2</li> 
+       <li>T4 DNA Ligase</li> 
+       <li>10x T4 DNA Ligase Buffer</li> 
+       <li>diluted pET-28 linearized backbone. <b>Goal = 137ng in solution.</b></li> 
+       <li>GLP-1 R insert (5ng/&micro;L). <b>Goal = 26ng in solution.</b></li> 
+       <li>MiliQ Water</li> 
+      </ul> 
+     </ul> 
+     <li class="noBP mt-5 mb-1"><h3>Protocol:</h3></li> 
+     <ol> 
+      <li>For each tube, prepare sample Master mix:</li> 
+      <table class="table table-dark"> 
+       <thead> 
+        <tr> 
+         <th scope="col"></th> 
+         <th scope="col">Reagents</th> 
+         <th scope="col">Volume (&micro;L)</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+        <tr> 
+         <td>1 </td>
+         <td>BsaI-HFv2 </td>
+         <td>0.5 </td>
+        </tr> 
+        <tr> 
+         <td>2 </td>
+         <td>T4 DNA Ligase </td>
+         <td>1 </td>
+        </tr> 
+        <tr> 
+         <td>3 </td>
+         <td>10x T4 DNA Ligase Buffer </td>
+         <td>1.5 </td>
+        </tr> 
+        <tr> 
+         <td>4 </td>
+         <td>pET-28 linearized backbone (463.9 ng/&micro;L) </td>
+         <td>0.3 </td>
+        </tr> 
+        <tr> 
+         <td>5 </td>
+         <td>Diluted GLP-1 R insert (26.26 ng/&micro;L) </td>
+         <td>1 </td>
+        </tr> 
+        <tr> 
+         <td>6 </td>
+         <td>MiliQ Water </td>
+         <td>10.7 </td>
+        </tr> 
+        <tr> 
+         <td> </td>
+         <th>TOTAL:</th> 
+         <th>15</th> 
+        </tr> 
+       </tbody> 
+      </table> 
+      <li>Place sample into thermocycler under the following conditions:</li> 
+      <table class="table table-dark"> 
+       <thead> 
+        <tr> 
+         <th scope="col">Step:</th> 
+         <th scope="col">Temperature: (&ordm;C)</th> 
+         <th scope="col">Time:</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+        <tr> 
+         <td>Restriction &amp; Ligation </td>
+         <td>37 </td>
+         <td>3 hours </td>
+        </tr> 
+        <tr> 
+         <td>Linearize remaining plasmid </td>
+         <td>50 </td>
+         <td>5 minutes </td>
+        </tr> 
+        <tr> 
+         <td>Inactivation (prevent re-ligation) </td>
+         <td>80 </td>
+         <td>10 minutes </td>
+        </tr> 
+        <tr> 
+         <td>Hold </td>
+         <td>16 </td>
+         <td>∞ </td>
+        </tr> 
+       </tbody> 
+      </table> 
+      <li>Run Gel Electrophoresis using samples from Inverse PCR to confirm that our pET-28:Ex-4 Plasmid was successfully constructed. <b>Expected size: 5878 bp.</b></li> 
+     </ol> 
+     <br>
+     <ul> 
+      <li>We performed 2 control samples using Exendin-4 inserts that were known to be successful.</li> 
+     </ul> 
+    </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Two2" aria-expanded="false" aria-controls="collapse2Two2">
+            Touchdown Colony PCR for GLP-1 R in&nbsp<i>E. coli</i>
+          </button>
+        </h2>
+        <div id="collapse2Two2" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading2" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+    <b>Purpose:</b> Colony PCR is utilized in our experiment in order to confirm the presence of GLP-1 R insert in the plasmid construct of transformed DH10B and C41 strains of <i>E. coli</i> colonies. 
+    <ul class="mt-5">  
+     <ul> 
+      <li><h5>Equipment:</h5></li> 
+      <ul> 
+       <li>Thermocycler</li> 
+      </ul> 
+     </ul> 
+     <br>
+     <ul> 
+      <li><h5>Materials:</h5></li> 
+      <ul> 
+       <li>One Taq 2x Master Mix with Standard Buffer (NEB)</li> 
+       <li>Petri dish containing transfected <i>E. coli</i> colonies</li> 
+       <li>Colony Picker</li> 
+       <li>Forward Primer (2.5&micro;M)</li> 
+       <li>Reverse Primer (2.5&micro;M)</li> 
+       <li>MiliQ Water</li> 
+      </ul> 
+     </ul> 
+     <li class="noBP mt-5 mb-1"><h3>Protocol:</h3></li> 
+     <ol> 
+      <li>Take petri dish with grown transformation colonies.</li> 
+      <ul> 
+       <li>circle and label chosen colonies on petri dish to indicate which colonies were chosen for cPCR.</li> 
+      </ul> 
+      <li>Aliqout 10&micro;L of MiliQ water into respective PCR. tube.</li> 
+      <ul> 
+       <li>One tube for each chosen colony.</li> 
+       <li>Make sure to label each PCR tube for its respective colony.</li> 
+      </ul> 
+      <li>Using a colony picker, gently touch a colony and suspend in the 10&micro;L water PCR tube.</li> 
+      <ul> 
+       <li>repeat for each colony.</li> 
+      </ul> 
+      <li>Prepare a PCR Master Mix in 1.5mL microcentrifuge tube for a 25&micro;L reaction.</li> 
+      <table class="table table-dark"> 
+       <thead> 
+        <tr> 
+         <th scope="col"></th> 
+         <th scope="col">Reagents</th> 
+         <th scope="col">Volume (&micro;L)</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+        <tr> 
+         <td>1 </td>
+         <td>Forward Primer (2.5mM) </td>
+         <td>2 </td>
+        </tr> 
+        <tr> 
+         <td>2 </td>
+         <td>Reverse Primer (2.5mM) </td>
+         <td>2 </td>
+        </tr> 
+        <tr> 
+         <td>3 </td>
+         <td>One Taq 2x Master Mix </td>
+         <td>12.5 </td>
+        </tr> 
+        <tr> 
+         <td>4 </td>
+         <td>MiliQ Water </td>
+         <td>7.5 </td>
+        </tr> 
+        <tr> 
+         <td>5 </td>
+         <td>Colony Sample </td>
+         <td>1 </td>
+        </tr> 
+        <tr> 
+         <td> </td>
+         <th>TOTAL:</th> 
+         <th>25</th> 
+        </tr> 
+       </tbody> 
+      </table> 
+      <li>Tap sides of tube to ensure proper mixing of contents.</li> 
+      <li>For a positive control, add 1&micro;L of pET28-GFP plasmid (52.9 ng/&micro;L) into a microcentrifuge tube with PCR master mix as shown above.</li> 
+      <li>Using a thermocycler, amplify nucleic acids using the example protocol. It is important to note that the primer annealing temperature is specific to the primers utilized. <a href="https://tmcalculator.neb.com/#!/main">NEB Primer Annealing Temperature Calculator</a> was used to determine the ideal temperature. The extension time is also dependent upon length of desired amplicon, OneTaq extends at a rate of about 1 kb per minute.</li> 
+      <table class="table table-dark"> 
+       <thead> 
+        <tr> 
+         <th scope="col">Step:</th> 
+         <th scope="col">Temperature: (&ordm;C)</th> 
+         <th scope="col">Time: (seconds)</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+        <tr> 
+         <td>Denaturing </td>
+         <td>94 </td>
+         <td>30 </td>
+        </tr> 
+        <tr> 
+         <td>Annealing </td>
+         <td>53 </td>
+         <td>45 </td>
+        </tr> 
+        <tr> 
+         <td>Extension </td>
+         <td>68 </td>
+         <td>40 </td>
+        </tr> 
+        <tr> 
+         <th>Repeat steps above 10x while decreasing the annealing temperature 0.5&ordm;C per cycle!</th> 
+        </tr> 
+        <tr> 
+         <td>Denaturing </td>
+         <td>94 </td>
+         <td>30 </td>
+        </tr> 
+        <tr> 
+         <td>Annealing </td>
+         <td>48 </td>
+         <td>45 </td>
+        </tr> 
+        <tr> 
+         <td>Extension </td>
+         <td>68 </td>
+         <td>40 </td>
+        </tr> 
+        <tr> 
+         <th>Repeat steps above 20x!</th> 
+        </tr> 
+        <tr> 
+         <td>Safety Extension </td>
+         <td>68 </td>
+         <td>300 (5 min) </td>
+        </tr> 
+        <tr> 
+         <td>Hold </td>
+         <td>4 </td>
+         <td>∞ </td>
+        </tr> 
+       </tbody> 
+      </table> 
+      <li>Run Gel Electrophoresis using samples from Colony PCR to confirm that our GLP-1 R plasmid insert has the expected size. <b>Expected size: 605 bp.</b></li> 
+     </ol> 
+    </ul> 
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+    
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5Five5" aria-expanded="false" aria-controls="collapse5Five5">
+            Golden Gate Assembly of GLP-1 R in&nbsp<i>E. coli</i>
+          </button>
+        </h2>
+        <div id="collapse5Five5" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> After obtaining a successful linearized template plasmid (pET-28), we performed a Golden Gate reaction that assembled our designed GLP-1 R Plasmid with the pET-2828 backbone. Hence, our desired plasmid was constructed. 
+    <ul class="mt-5">  
+     <ul> 
+      <li><h5>Equipment:</h5></li> 
+      <ul> 
+       <li>Thermocycler</li> 
+      </ul> 
+     </ul> 
+     <br>
+     <ul> 
+      <li><h5>Materials:</h5></li> 
+      <ul> 
+       <li>BsaI-HFv2</li> 
+       <li>T4 DNA Ligase</li> 
+       <li>10x T4 DNA Ligase Buffer</li> 
+       <li>diluted pET-28 linearized backbone. <b>Goal = 137ng in solution.</b></li> 
+       <li>GLP-1 R insert (5ng/&micro;L). <b>Goal = 26ng in solution.</b></li> 
+       <li>MiliQ Water</li> 
+      </ul> 
+     </ul> 
+     <li class="noBP mt-5 mb-1"><h3>Protocol:</h3></li> 
+     <ol> 
+      <li>For each tube, prepare sample Master mix:</li> 
+      <table class="table table-dark"> 
+       <thead> 
+        <tr> 
+         <th scope="col"></th> 
+         <th scope="col">Reagents</th> 
+         <th scope="col">Volume (&micro;L)</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+        <tr> 
+         <td>1 </td>
+         <td>BsaI-HFv2 </td>
+         <td>0.5 </td>
+        </tr> 
+        <tr> 
+         <td>2 </td>
+         <td>T4 DNA Ligase </td>
+         <td>1 </td>
+        </tr> 
+        <tr> 
+         <td>3 </td>
+         <td>10x T4 DNA Ligase Buffer </td>
+         <td>1.5 </td>
+        </tr> 
+        <tr> 
+         <td>4 </td>
+         <td>pET-28 linearized backbone (463.9 ng/&micro;L) </td>
+         <td>0.3 </td>
+        </tr> 
+        <tr> 
+         <td>5 </td>
+         <td>Diluted GLP-1 R insert (26.26 ng/&micro;L) </td>
+         <td>1 </td>
+        </tr> 
+        <tr> 
+         <td>6 </td>
+         <td>MiliQ Water </td>
+         <td>10.7 </td>
+        </tr> 
+        <tr> 
+         <td> </td>
+         <th>TOTAL:</th> 
+         <th>15</th> 
+        </tr> 
+       </tbody> 
+      </table> 
+      <li>Place sample into thermocycler under the following conditions:</li> 
+      <table class="table table-dark"> 
+       <thead> 
+        <tr> 
+         <th scope="col">Step:</th> 
+         <th scope="col">Temperature: (&ordm;C)</th> 
+         <th scope="col">Time:</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+        <tr> 
+         <td>Restriction &amp; Ligation </td>
+         <td>37 </td>
+         <td>3 hours </td>
+        </tr> 
+        <tr> 
+         <td>Linearize remaining plasmid </td>
+         <td>50 </td>
+         <td>5 minutes </td>
+        </tr> 
+        <tr> 
+         <td>Inactivation (prevent re-ligation) </td>
+         <td>80 </td>
+         <td>10 minutes </td>
+        </tr> 
+        <tr> 
+         <td>Hold </td>
+         <td>16 </td>
+         <td>∞ </td>
+        </tr> 
+       </tbody> 
+      </table> 
+      <li>Run Gel Electrophoresis using samples from Inverse PCR to confirm that our pET-28:GLP-1 R Plasmid was successfully constructed. <b>Expected size: 5878 bp.</b></li> 
+     </ol> 
+     <br>
+     <ul> 
+      <li>We performed 2 control samples using Exendin-4 inserts that were known to be successful.</li> 
+     </ul> 
+    </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6Six6" aria-expanded="false" aria-controls="collapse6Six6">
+            Transformation of Ex-4 and GLP-1 R in&nbsp<i>E. coli</i>
+          </button>
+        </h2>
+        <div id="collapse6Six6" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+    <b>Purpose:</b> With our constructed exendin-4 and GLP-1 R plasmids, we transformed both DH10B (plasmid production) and BL21 (Protein Production) 
+    <i>E. coli</i>. Hence, with that we are able to express them in our proof of concept host. 
+    <ul class="mt-5"> 
+     <ul> 
+      <li><h5>Equipment:</h5></li> 
+      <ul> 
+       <li>LB-Kan Agar Plates</li> 
+       <li>Hot Plate Water Bath</li> 
+       <li>Incubator</li> 
+       <li>Fume Hood</li>
+      </ul> 
+     </ul> 
+     <br>
+     <ul> 
+      <li><h5>Materials:</h5></li> 
+      <ul> 
+       <li><a title="Super Optimal Broth with Catabolite repression">SOC</a> Buffer</li> 
+       <li>DH10B &amp; BL21 <i>E. coli</i> cells</li> 
+      </ul> 
+     </ul> 
+     <li class="noBP mt-5 mb-1"><h3>Preparation:</h3>
+      <ol> 
+        <li>Shaking incubator at 37 &deg;C</li>
+        <li>Stationary incubator at 37 &deg;C</li>
+        <li>Water bath at 42 &deg;C</li>
+        <li>Ice bucket filled with ice</li>
+        <li>Thaw SOC</li>
+        <li>Thaw competent cells on ice, no more than 20min</li>
+        <li>Warm plates in 37 degree incubator</li>
+      </ol>
+     <li class="noBP mt-5 mb-1"><h3>Protocol:</h3></li> 
+     <ol> 
+      <li>Take competent cells out of -80&deg;C and thaw on ice (approximately 20-30 mins).</li>
+      <li>Remove agar plates (containing the appropriate antibiotic) from storage at 4 &deg;C and let warm up to room temperature and then (optional) incubate in 37&deg;C incubator.</li>
+      <li>Mix 1-5 &micro;l of DNA (usually 10 pg to 100 ng) into 20-50 &micro;L of competent cells in a microcentrifuge or falcon tube. GENTLY mix by flicking the bottom of the tube with your finger a few times.</li>
+      <li><b>Transformation efficiencies will be approximately 10-fold lower for ligation of inserts to vectors than for an intact control plasmid.</b></li>
+      <li>Incubate the competent cell/DNA mixture on ice for 20-30 mins.</li>
+      <li>Heat shock each transformation tube by placing the bottom 1/2 to 2/3 of the tube into a 42&deg;C water bath for 30-60 secs (45 secs is usually ideal, but this varies depending on the competent cells you are using).</li>
+      <li>Put the tubes back on ice for 2 min.</li>
+      <li>Add 250-1,000 &micro;l LB or SOC media (without antibiotic) to the bacteria and grow in 37 &deg;C shaking incubator for 45 min.</li>
+      <li><b>This outgrowth step allows the bacteria time to generate the antibiotic resistance proteins encoded in the plasmid backbone so that they will be able to grow once plated on the antibiotic containing agar plate. This step is not critical for Ampicillin resistance but is much more important for other antibiotic resistances.</b></li>
+      <li>Using the fume hood, plate some or all of the transformation onto a 10 cm LB agar plate containing the appropriate antibiotic.</li>
+      <li><b>We recommend that you plate 50 &micro;L on one plate and the rest on a second plate. This gives the best chance of getting single colonies, while allowing you to recover all transformants.</b></li>
+      <li><b>If the culture volume is too big, gently collect the cells by centrifugation and resuspend in a smaller volume of LB so that there isn't too much liquid media on the agar plates. If the agar plate doesn't dry adequately before the cells begin dividing, the bacteria diffuse through the liquid and won't grow in colonies.</b></li>
+    </ol>
+    <img class="figureIMG mt-5" src="https://static.igem.wiki/teams/4190/wiki/img-4461.jpg" alt="plate under UV light">
+     <br>
+     <ul> 
+      <li>We performed 2 control samples using Exendin-4 inserts that were known to be successful.</li> 
+     </ul> 
+    </ul> 
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+<div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7seven7" aria-expanded="false" aria-controls="collapse7seven7">
+            <i>E. coli</i>&nbsptransformation protocol for&nbsp<i>S. cerevisiae</i>&nbspplasmids
+          </button>
+        </h2>
+        <div id="collapse7seven7" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> Before we Integrated our plasmids into S. cerevisiae, we had to grow them up in DH10B E. coli.
+        <ul>
+            <li>
+                <h5 class="mt-5 mb-1"><p>Materials:</p></h5>
+                <ol>
+                    <li>
+                        Plasmid DNA 1 &micro;l
+                    </li>
+                    <li>
+                        Competent E. coli cells 50 &micro;l (DH10B 10 chemicompetent)
+                    </li>
+                    <li>
+                        SOC media 50 &micro;l
+                    </li>
+                    <li>
+                        2xYT/LB agar plate with antibiotic selection
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3 class="mt-5 mb-1"><p>Sterile condition:</p></h3>
+                <ol>
+                    <li>
+                        Work around hot air current created by benson burner
+                    </li>
+                    <li>
+                        Work quickly between each open lids
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3 class="mt-5 mb-1"><p>Procedure:</p></h3>
+                <ol>
+                    <li>
+                        Label 1.5 ml centrifuge tubes
+                    </li>
+                    <li>
+                        Pipette 2 &micro;l of Plasmid DNA (Ligation mixture)
+                    </li>
+                    <li>
+                        Pipette 50 &micro;l of competent E. coli cells (Competent cells are stored in the freezer. It should be thawed on ice, and avoid centrifuge or flicking hard on the tube as it may shock the cells)
+                    </li>
+                    <li>
+                        Leave on ice for 60 minutes&nbsp;
+                    </li>
+                    <li>
+                        Label agar plates
+                    </li>
+                    <li>
+                        Heat shock in 42&deg;C water bath for 90 seconds
+                    </li>
+                    <li>
+                        Leave on ice for 1 minute
+                    </li>
+                    <li>
+                        Add 50&micro;l of SOC medium to each tube under sterile condition&nbsp;
+                    </li>
+                    <li>
+                        Incubate without shaking at 37&deg;C for 1 hour&nbsp;
+                    </li>
+                    <li>
+                        Dry agar plates in heater for 5 minutes. The agar plate should look a bit wrinkly under light.&nbsp;
+                    </li>
+                    <li>
+                        Under sterile condition, pipette the entire solution to agar plate&nbsp;
+                    </li>
+                    <li>
+                        Dip stainless steel inoculator in ethanol and lit over benson burner. Wait until the ethanol burns off. Cool the inoculator on the lid of the agar plate. spread the bacteria solution across the entire agar plate while rotating.&nbsp;
+                    </li>
+                    <li>
+                        Incubate for 72 hours.
+                    </li>
+                </ol>
+            </li>
+    </li>
+</ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8eight8" aria-expanded="false" aria-controls="collapse8eight8">
+            Plasmid Miniprep
+          </button>
+        </h2>
+        <div id="collapse8eight8" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> We used Plasmid miniprep to extract and purify our plasmid DNA. Miniprep purifies the smallest quantity of plasmid DNA, between 5 and 50 µg for a culture volume of a few (1-2) mL.
+            <ul>
+        <ul>
+            <li class="mt-5">
+                <p>We used the protocol from Zyppy Plasmid Miniprep Kit from Zymo Research</p>
+            </li>
+            <li>
+                &ldquo;Zyppy Plasmid Miniprep Kit,&rdquo; ZYMO RESEARCH. https://www.zymoresearch.com/products/zyppy-plasmid-miniprep-kit (accessed Oct. 10, 2022).
+            </li>
+        </ul>
+    </li>
+</ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9nine9" aria-expanded="false" aria-controls="collapse9nine9">
+            Plasmid Midiprep
+          </button>
+        </h2>
+        <div id="collapse9nine9" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> We used Plasmid midiprep to extract and purify our plasmid DNA. Midiprep purifies a larger quantity of plasmid DNA than Miniprep, between 100 and 350 µg for a culture volume of 15-25 mL.
+      <ul>
+        <ul>
+            <li class="mt-5">
+                <p>We followed the protocol for the ZymoPURE II Plasmid Midiprep Kit from Zymo Research</p>
+            </li>
+            <li>
+                &ldquo;ZymoPURE II Plasmid Midiprep Kit,&rdquo; ZYMO RESEARCH. https://www.zymoresearch.com/products/zymopure-ii-plasmid-midiprep-kit (accessed Aug. 28, 2022).
+            </li>
+        </ul>
+      </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10ten10" aria-expanded="false" aria-controls="collapse10ten10">
+            Golden Gate Assembly for&nbsp<i>S. cerevisiae</i>&nbspPlasmids
+          </button>
+        </h2>
+        <div id="collapse10ten10" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> We used Golden Gate Assembly to construct our plasmids for eventual integration into the LEU2 and TRP1 sites in the genome of S. cerevisiae.
+      <ul>
+        <ul>
+            <li class="mt-5 mb-1">
+                <p>We used adapted our protocol from NEB&rsquo;s Golden Gate Assembly Protocol for Using NEB Golden Gate Assembly Mix (E1600)</p>
+            </li>
+            <li>
+                <h5 class="mt-5 mb-1"><p>Materials</p></h5>
+                <ol>
+                    <li>
+                        Spectrophotometer
+                    </li>
+                    <li>
+                        Promoter plasmid
+                    </li>
+                    <li>
+                        Terminator plasmid
+                    </li>
+                    <li>
+                        Backbone plasmid
+                    </li>
+                    <li>
+                        Insert DNA
+                    </li>
+                    <li>
+                        BsaI enzyme
+                    </li>
+                    <li>
+                        T7 DNA Ligase
+                    </li>
+                    <li>
+                        Ligase Buffer
+                    </li>
+                    <li>
+                        BSA medium
+                    </li>
+                    <li>
+                        DI water&nbsp;
+                    </li>
+                    <li>
+                        Thermocycler
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3 class="mt-5 mb-1"><p>Protocol</p></h3>
+                <ol>
+                    <li>
+                        Calculate the density of DNA through spectrophotometry. Concentration should be the same for each DNA sample (30 fmol). Dilute samples as necessary.
+                    </li>
+                    <li>
+                        A Golden Gate reaction mixture was prepared as follows: 0.5 &mu;L of each DNA insert or plasmid, 1 &mu;L T4 DNA Ligase buffer (NEB), 0.5 &mu;L T7 DNA Ligase (NEB), 0.5 &mu;L restriction enzyme, and water to bring the final volume to 10 &mu;L.&nbsp;
+                    </li>
+                    <li>
+                        Reaction mixtures are incubated in a thermocycler according to the following program: 25 cycles of digestion and ligation (42 &deg;C for 2 min, 16 &deg;C for 5 min) followed by a final digestion step (60 &deg;C for 10 min), and a heat inactivation step (80 &deg;C for 10 min).
+                    </li>
+                </ol>
+            </li>
+            <li class="mt-5 mb-1">
+                &ldquo;Golden Gate Assembly Protocol for Using NEB Golden Gate Assembly Mix (E1600) | NEB.&rdquo; https://www.neb.com/protocols/2015/03/04/golden-gate-assembly-protocol-for-using-neb-golden-gate-assembly-mix-e1600 (accessed Oct. 10, 2022).
+            </li>
+        </ul>
+    </li>
+      </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11eleven11" aria-expanded="false" aria-controls="collapse11eleven11">
+            <i>S. cerevisiae</i>&nbspTransformation
+          </button>
+        </h2>
+        <div id="collapse11eleven11" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> We transformed our S. cerevisiae cultures with our integrative plasmids for eventual genomic integration.
+            <ul>
+        <ul>
+            <li class="mt-5 mb-1">
+                <p>We followed the protocol for the Frozen-EZ yeast transformation II kit from Zymo Research</p>
+            </li>
+            <li class="mt-5 mb-1">
+                <h3><p>Protocol Notes</p></h3>
+                <ol>
+                    <li>
+                        <p>Yeast colonies were grown to saturation overnight in YPD, then diluted 1:100 in 50 mL of fresh media and grown for 4&minus;6 h to OD600&minus;0.8. Cells were pelleted and washed once with water and twice with 100 mM Lithium Acetate (Sigma). Cells were then mixed by vortexing with 2.4 mL of 50% PEG-3350 (Fisher Scientific), 360 &mu;L of 1 M Lithium Acetate, 250 &mu;L of salmon sperm DNA (Sigma), and 500 &mu;L of water. DNA was added to 100&minus;350 &mu;L of transformation mixture and incubated at 42 &deg;C for 25 min. When selecting for prototrophy, the transformation mixture was pelleted, resuspended in water, and plated directly onto solid agar plates. When selecting for drug resistance, the transformation mixture was pelleted, resuspended in YPD, incubated at 30 &deg;C for 2 h with shaking, pelleted and washed with water, then plated onto solid agar plates. Plasmids designed for chromosomal integration (i.e., containing 5&prime; and 3&prime; genome homology regions without a yeast origin of replication) were digested with NotI for 10 min prior to transformation to stimulate homologous recombination. The entire digestion reaction (without DNA cleanup) was included in the transformation in place of plasmid DNA</p>
+                    </li>
+                </ol>
+            </li>
+            <li class="mt-5 mb-1">
+                &ldquo;Frozen-EZ Yeast Transformation II Kit,&rdquo; ZYMO RESEARCH. https://www.zymoresearch.com/products/frozen-ez-yeast-transformation-ii-kit (accessed Oct. 10, 2022).
+            </li>
+        </ul>
+</ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12twelve12" aria-expanded="false" aria-controls="collapse12twelve12">
+            Cell Lysis
+          </button>
+        </h2>
+        <div id="collapse12twelve12" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> We needed to lyse our cells before performing IMAC in order to extract our protein from our cultures.
+            <ul>
+        <ul>
+            <li>
+                <h3 class="mt-5 mb-1"><p>Protocol</p></h3>
+            </li>
+            <ol>
+            <li>
+                Pellet cell culture at 1000 RCF&nbsp;
+                <ul>
+                    <li>
+                        50 ml Falcon tubes with 50 ml cell LB solution
+                    </li>
+                    <li>
+                        Pour/Pipet media
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Resuspend cell pellets. Add 10 ml of lysis buffer into the Falcon tube and resuspend. Once the pellets are resuspended add lysis buffer. Put the Falcon tube back into ice.
+            </li>
+            <li>
+                Pour glass beads into the Falcon tube and Vortex the resuspended cells for at least 10 minutes.
+            </li>
+            <li>
+                Centrifuge it 1000 Centrifuge units for 20 min
+            </li>
+            <li>
+                Once centrifuged prepare a .45 &micro;M syringe filter. Filter the sample by adding it into the syringe and pushing it through the filter into a new tube.&nbsp;
+            </li>
+            </ol>
+        </ul>
+</ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13thirteen13" aria-expanded="false" aria-controls="collapse13thirteen13">
+            Immobilized Metal Affinity Chromatography (IMAC) for Protein Purification
+          </button>
+        </h2>
+        <div id="collapse13thirteen13" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> After our cells were lysed, we preformed IMAC to purify our His-tagged proteins.
+            <ul>
+        <ul>
+            <li class="mt-5 mb-1">
+                <h3><p>Procedure</p></h3>
+                <ol>
+                    <li>
+                        Place a 2 mL Pierce Histidine Column into a holder, leaving enough room below for a eppendorf tube to fit underneath.&nbsp;
+                    </li>
+                    <li>
+                        Mix the Cobalt resin suspension gently by inverting a few times. Then add 1 ml of the &quot;slurry&quot; to a 2 ml Pierce Histidine Column. Collect the flow through in the eppendorf tube.&nbsp;
+                    </li>
+                    <li>
+                        Add the &quot;slurry&quot; in increments of 1 ml to the column until the volume of cobalt inside the column is roughly 1 ml. Collect the flow through. Once the column is set, add it back to the bottle containing the resin and put the resin bottle back into the fridge.&nbsp;
+                    </li>
+                    <li>
+                        Add 5 ml of equilibration buffer to the column and collect the flow through in tubes (label the EQ X). Dispose once used.
+                        <ul>
+                            <li>
+                                If the column has been used prior, it is recommended to run the flow through on a nanodrop to ensure that the column is clean. Blank with equilibration buffer.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        After running the equilibration buffer attach a protein bucket to the top of the column. Add 10 ml of the protein sample. Collect the flow through and run these on the nanodrop and record data.(Label &quot;Protein Flowthrough #X&quot;f (where X is 1,2,3,etc.))
+                    </li>
+                    <li>
+                        After running the protein flowthrough. add 5-10 ml of Wash buffer in 1 ml increments. Run each 1 ml in an eppendorf tube on the nanodrop. Look for concentration and absorbance at 280 to be almost 0. Once it has been held at 0 for 2-3 samples continue to the elution buffer.
+                        <ul>
+                            <li>
+                                It should roughly take 5-10 washes. Overwashing will dilute the protein
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Elution takes place in 2ml intervals starting at 50 mM imidazole and incrementing upward until 300 mM imidazole. Collect the samples in 1 ml increments in eppendorfs. Run on nanodrop and look for 280 peak. Once there is a 280 peak, the next 3-4 samples should contain the protein/ Continue at 300 mM until no 280 peak is seen.
+                        <ul>
+                            <li>
+                                We will make one PBS Stock without any imidazole and one PBS Stock with 300 mM of imidazole (The table below shows the amount of imidazole to add into PBS Stock for 50 ml of solution)
+                            </li>
+                            <li>
+                                You might need to use 500 mM elution buffer if results do not show well (only do this once or twice because the nanodrop will start giving negative results indicating that the drip was too concentrated with imidazole)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        After running all the elutions regenerate the column with 5-10 ml of regeneration buffer. Then followed by 5-10 ml of ultrapure water. Store the column in 2ml of 20% ethanol.&nbsp;
+                    </li>
+                </ol>
+            </li>
+        </ul>
+</ul>
+
+
+<br>
+<br>
+<br>
+<h2 class="mt-5">Dillutions of Elution Buffer</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Molarity (mM)</th>
+    <th>Volume of 300 mM (mL)</th>
+    <th>Volume of PBS (mL)</th>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>8.33</td>
+    <td>41.67</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>16.67</td>
+    <td>33.3</td>
+  </tr>
+  <tr>
+    <td>150</td>
+    <td>25</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>200</td>
+    <td>33.3</td>
+    <td>16.67</td>
+  </tr>
+  <tr>
+    <td>250</td>
+    <td>41.67</td>
+    <td>8.33</td>
+  </tr>
+  <tr>
+    <td>300</td>
+    <td>50</td>
+    <td>0</td>
+  </tr>
+</table>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14fourteen14" aria-expanded="false" aria-controls="collapse14fourteen14">
+            SDS-PAGE 
+          </button>
+        </h2>
+        <div id="collapse14fourteen14" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+            <b>Purpose:</b> We ran our purified protein on an SDS-PAGE to see if there was a His-tagged protein at the expected size of our various proteins.
+            <ul>
+        <ul>
+            <li class="mt-5">
+                We followed the Sodium Dodecyl Sulfate&ndash;Polyacrylamide Gel Electrophoresis of Proteins protocol from Cold Spring Harbor.
+            </li>
+            <li class="mt-5">
+                &ldquo;Cold Spring Harbor Protocols.&rdquo; http://cshprotocols.cshlp.org/ (accessed Oct. 10, 2022).
+            </li>
+        </ul>
+</ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="accordion-item mb-5">
+        <h2 class="accordion-header" id="CUSTOMNAME-AccordionHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15fifteen15" aria-expanded="false" aria-controls="collapse15fifteen15">
+            Genomic DNA Isolation
+          </button>
+        </h2>
+        <div id="collapse15fifteen15" class="accordion-collapse collapse" aria-labelledby="CUSTOMNAME-AccordionHeading3" data-bs-parent="#CUSTOMNAME-Accordion">
+          <div class="accordion-body">
+                <b>Purpose:</b> After our our plasmids were integrated into the genome of S. cerevisiae, we used a Genomic DNA isolation kit to purify our samples for Sanger sequencing.
+            <ul>
+        <ul class="mt-5">
+            <li>
+                We followed the Genomic DNA Clean &amp; Concentrator-10 kit from Zymo Research.
+            </li>
+            <li class="mt-5">
+                &ldquo;Genomic DNA Clean &amp; Concentrator-10,&rdquo; ZYMO RESEARCH. https://www.zymoresearch.com/products/genomic-dna-clean-concentrator-10 (accessed Oct. 10, 2022).
+            </li>
+        </ul>
+</ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+  </div>
+    
+    
+   </div> 
+
+{% endblock %}
+
+
+

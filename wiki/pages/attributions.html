@@ -1,0 +1,1602 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link href="{{ url_for('static', filename = 'hex-grid.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Team & Attributions{% endblock %}
+
+{% block img0url %}https://static.igem.wiki/teams/4190/wiki/banner-gif/ezgif-1-0bbc348116.gif{% endblock %}
+{% block img0desc %}{% endblock %}
+
+{% block header %}
+
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="{{ self.img0url() }}" class="d-block" alt="{{ self.img0desc() }}">
+        <div class="carousel-caption">
+            <h1>{{ self.title() }}</h1>
+            <h4>{{ self.img0desc() }}</h4>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block page_content %}
+
+<ul class="hex-grid__list">
+    <li class="hex-grid__item">
+        <!-- 1 -->
+        <button id="Lizzie" type="button" data-bs-toggle="modal" data-bs-target="#modal-01"
+            class="hex-grid__content btn">
+            <p>Elizabeth</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-01">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Elizabeth Beer</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-01"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-01"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Captain</h5>
+                    <a class="fromLeft email" href="mailto:ebeer@ucsc.edu">ebeer@ucsc.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/elizabeth-beer-2b706b220/">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-01" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hi! I’m Lizzie, one of the co-captains for the 2022 iGEM team this year. I came to
+                                    Santa Cruz four years ago without having any idea as to what I wanted to study and
+                                    am now going onto my fifth year as a Biomolecular Engineering student. Crazy how
+                                    life just happens like that, you know? The freedom that undergraduate students have
+                                    in iGEM to pursue a project of their interest, under the condition that they
+                                    fundraise all the money to do so, is what initially drew me to this program. I am so
+                                    fortunate to be part of this program and am extremely grateful to be one of the
+                                    leaders of this team of 14 passionate, inspiring and goofy nerds. When I am not in
+                                    the lab keeping my minions in check, I enjoy spending time with friends and family,
+                                    frolicing around town, hitting the beach to both bask in the sun and surf, and
+                                    watching “The Boys” with the boys every Wednesday night. I am not sure what my
+                                    future holds, but I know that my team and our project have prepared me to continue to
+                                    pursue research that will make a positive impact on a local and global scale.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-01" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Fundraising from meetings with individual investors, granting bodies, companies, and campus donor events
+                                    donation events.</li>
+                                <li>Facilitated meetings with endocrinologists and stakeholders.</li>
+                                <li>Coordinated collaboration with Dubois lab for binding affinity test.</li>
+                                <li>Helped create wet-lab schedules/plans with Kiana.</li>
+                                <li>Facilitated team meetings alongside Kiana.</li>
+                                <li>Implemented protocols and troubleshot alongside the wet-lab group for both <i>E.
+                                        coli</i> <a class="glossaryRef" title="Exendin-4"
+                                        href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> and <i>E. coli</i> <a
+                                        class="glossaryRef" title="Glucagon-Like Peptide 1 Receptor"
+                                        href="https://2022.igem.wiki/ucsc/glossary#GLP-1R">GLP-1 R</a>.</li>
+                                <li>Hosted education and participated in community outreach.</li>
+                                <li>Worked with Kiana to complete and submit iGEM deliverables.</li>
+                                <li>Supported <i>S. cerevisiae</i> group in protein production.</li>
+                                <li>Worked on implementation of wiki content and debugging of the website.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item hex-grid__empty">
+        <div class="hex-grid__content hex-grid__empty">
+            [HIDDEN]
+        </div>
+    </li>
+    <li class="hex-grid__item">
+        <!-- 2 -->
+        <button id="Bernick" type="button" data-bs-toggle="modal" data-bs-target="#modal-02"
+            class="hex-grid__content btn">
+            <p>Dr. Bernick</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-02">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Dr. David L Bernick</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-02"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-02"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Principal Investigator</h5>
+                    <a class="fromLeft email" href="mailto:dbernick@soe.ucsc.edu">dbernick@soe.ucsc.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/david-bernick-32040">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-02" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hi my name is David Bernick. I am a professor, guitar builder, computer system
+                                    designer, software engineer, briefly a pilot, alternative Energy enthusiast, father,
+                                    grandfather and iGEM mentor. I have been involved in iGEM for nearly a decade. iGEM
+                                    has been the most profound teaching tool I have seen for training exceptional
+                                    engineers in the craft of responsible synthetic biology.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-02" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Guided <i>Helo</i> through every step of the project, including team building,
+                                    brainstorming, fundraising, experimental design, data analysis, and travel
+                                    logistics.</li>
+                                <li>Brought in experienced stakeholders and bioengineers to speak about their work, and
+                                    advise us on our future careers.</li>
+                                <li>Taught us basic laboratory techniques and etiquette, as well as how to use several
+                                    lab devices.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item hex-grid__empty">
+        <div class="hex-grid__content hex-grid__empty">
+            [HIDDEN]
+        </div>
+    </li>
+    <li class="hex-grid__item">
+        <!-- 3 -->
+        <button id="Kiana" type="button" data-bs-toggle="modal" data-bs-target="#modal-03"
+            class="hex-grid__content btn">
+            <p>Kiana</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-03">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Kiana Imani</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-03"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-03"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Captain</h5>
+                    <a class="fromLeft email" href="mailto:kimani@ucsc.edu">kimani@ucsc.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/kiana-imani-01b6a1185/">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-03" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hi there! My name is Kiana, and I am a fourth year Biomolecular Engineering and
+                                    Bioinformatics student. Being an iGEM co-captain has been the best part of my
+                                    undergraduate career and has given me the privilege to help build an amazing team of
+                                    lovely, intelligent, deeply motivated, and a little-bit crazy undergrads. We’re all
+                                    going to be friends 4 life no doubt. I am so proud of our team’s progress and all
+                                    our efforts in making diabetes care more equitable. When I’m not in mini-boss mode,
+                                    I love to ski, bake, garden, and explore the beautiful California coast. After I
+                                    graduate, I’m excited to travel and pursue either an MD or PhD. Whichever path I
+                                    choose, I hope to carry forward by using my privileges and education to serve a
+                                    positive human impact within my career.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-03" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>As Co-captain, Kiana was an overseer of almost every aspect of the project and
+                                    helped ensure the team moved as one efficient machine.</li>
+                                <li>Helped brainstorm and conceptualize a rough project proposal for what has grown into
+                                    <i>Helo</i>.</li>
+                                <li>Fundraising from meetings with individual investors, granting bodies, companies, and campus donor events
+                                    donation events.</li>
+                                    <li>Facilitated team meetings alongside Elizabeth.</li>
+                                <li>Worked to develop a wet-lab plan for plasmid construction and protein production in
+                                    <i>E. coli</i></li>
+                                <li>Implemented protocols and troubleshot alongside the wet-lab team for both <i>E.
+                                        coli</i> <a class="glossaryRef" title="Exendin-4"
+                                        href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> and <i>E. coli</i>. <a
+                                        class="glossaryRef" title="Glucagon-Like Peptide 1 Receptor"
+                                        href="https://2022.igem.wiki/ucsc/glossary#GLP-1R">GLP-1 R</a>.</li>
+                                <li>Facilitated meetings with endocrinologists and stakeholders.</li>
+                                <li>Worked on implementation of wiki content and debugging of the website.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 4 -->
+        <button id="Neo" type="button" data-bs-toggle="modal" data-bs-target="#modal-04" class="hex-grid__content btn">
+            <p>Neo</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-04">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Neo Peng</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-04"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-04"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:ypeng41@ucsc.edu">ypeng41@ucsc.edu</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-04" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hi, I am Neo. I love boba. I'm a third year biomolecular engineering student at UC
+                                    Santa Cruz. I'm really happy to be on this year's UCSC iGEM team and it's been a
+                                    pleasure to work with everyone. After graduation I plan on going to graduate school
+                                    to pursue a research career in virology or immunology. </li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-04" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Designed and performed the <i>S. cerevisiae</i> <a class="glossaryRef"
+                                        title="Exendin-4" href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a>
+                                    wet-lab experiments to produce Ex-4 from integrated protein coding gene in <i>S.
+                                        cerevisiae</i>.</li>
+                                <li>Consulted with Professor Kamakaka regularly.</li>
+                                <li>Made main logo for <i>Helo</i>.</li>
+                                <li>iGem Tiktok management with Joanne.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 5 -->
+        <button id="Gabino" type="button" data-bs-toggle="modal" data-bs-target="#modal-05"
+            class="hex-grid__content btn">
+            <p>Gabino</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-05">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Gabino Guzman</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-05"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-05"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Intern</h5>
+                    <a class="fromLeft email"
+                        href="mailto:gabinoguzman@student.hartnell.edu">gabinoguzman@student.hartnell.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/gabino-guzman-840a451a5">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-05" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hi! My name is Gabino and I’m the intern for the 2022 <a class="glossaryRef"
+                                        title="University of California, Santa Cruz"
+                                        href="https://2022.igem.wiki/ucsc/glossary#UCSC">UCSC</a> iGEM team! I’m a
+                                    Hispanic first-generation Pre-Med student at Hartnell Community College studying
+                                    biology! In the future, I hope to pursue an MPH and MD degree; ultimately working as
+                                    a psychiatrist in Hispanic communities to reduce the cultural stigma surrounding
+                                    mental health. I enjoy thrifting, reading philosophy, and playing chess when I am
+                                    not questioning my life choices.</li>
+                                <li>To be transparent, I almost didn’t apply to the internship as I didn’t believe a
+                                    STEM career would be obtainable for someone from my background. However, I’ve had
+                                    the privilege of being supported and encouraged by family, friends, and mentors to
+                                    apply – they’re the reason I applied to this internship.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-05" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Presented research to 200+ students at Soledad High School.</li>
+                                <li>Translated meeting with the 2022 Tec Chihuahua iGEM team.</li>
+                                <li>Contacted researchers specializing in <a class="glossaryRef" title="Exendin-4"
+                                        href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> production in hosts.
+                                </li>
+                                <li>Assisted with protein purification and genomic expression of Ex-4 in <i>S.
+                                        cerevisiae</i> and <i>E. coli</i>.</li>
+                                <li>Served as a note taker for virtual meetings with endocrinologists, primary care
+                                    providers, and researchers working with diabetic patients.</li>
+                                <li>Presented Ex-4 expression in <i>E. coli</i> timeline to team.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 6 -->
+        <button id="Linguine" type="button" data-bs-toggle="modal" data-bs-target="#modal-06"
+            class="hex-grid__content btn">
+            <p>Linguine</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-06">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Linguine Petroff</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-06"><b>Bio</b></a>
+                        </li>
+                        <!-- <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#attributions-06"><b>Attributions</b></a>
+                            </li> -->
+                    </ul>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Support</h5>
+                    <!-- <a class="fromLeft email" href="mailto:@ucsc.edu">@ucsc.edu</a> -->
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-06" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>My name is Linguine and I major in herpetology. I love to eat raspberries and
+                                    sunbathe. My main job in this team is to enhance morale.</li>
+                                <li>My distant cousin, the Gila Monster, produces Exendin-4 in their spit! <i>Gross!</i>
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <!-- <div id="attributions-06" class="container tab-pane fade">
+                                <hr>
+                                <ul>
+                                <li></li>
+                                </ul>
+                                <hr>
+                            </div> -->
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 7 -->
+        <button id="Eric" type="button" data-bs-toggle="modal" data-bs-target="#modal-07" class="hex-grid__content btn">
+            <p>Eric</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-07">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Eric Malekos</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-07"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-07"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>TA advisor</h5>
+                    <a class="fromLeft email" href="mailto:emalekos@ucsc.edu">emalekos@ucsc.edu</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-07" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>I'm Eric. I like a lot of things and dislike a lot of other things. Some things I
+                                    like are genetic engineering and mentoring intelligent, motivated undergrads. Some
+                                    things I dislike are inequitable access to medicine and writing about myself.
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-07" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Assisted Dr. B in troubleshooting the project, specifically in plasmid design,
+                                    transformation of <a class="glossaryRef" title="Exendin-4"
+                                        href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> in <i>E. coli</i>, and
+                                    computational modeling.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 8 -->
+        <button id="Lauren" type="button" data-bs-toggle="modal" data-bs-target="#modal-08"
+            class="hex-grid__content btn">
+            <p>Lauren</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-08">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Lauren Paule</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-08"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-08"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:lapaule@ucsc.edu">lapaule@ucsc.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/lapaule/">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-08" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hi! My name is Lauren and I’m a fourth year Biomolecular Engineering and
+                                    Bioinformatics student. My favorite part about being in iGEM is that we really get
+                                    to have a lot of freedom regarding the project we work on and the experiments that
+                                    we run. It’s a unique experience where we bridge both science and engineering in a
+                                    creative setting. After I graduate I hope to attend grad school and eventually work
+                                    in drug development. In my free time, I love to cook, read, and watch anime/kdramas.
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-08" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Organized collaboration meetings with the 2022 Stony Brook and Tec Chihuahua iGEM
+                                    teams.</li>
+                                <li>Monitored & created all the content for our Instagram & Twitter.</li>
+                                <li>Wrote the promotional video script.</li>
+                                <li>Organized meetings for human practices (Lafia Wellness).</li>
+                                <li>Headed calibration & Experiment 1 of the Interlab.</li>
+                                <li>Worked on genomic expression of <i>S. cerevisiae</i> in <a class="glossaryRef"
+                                        title="Exendin-4" href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a>.
+                                </li>
+                                <li>Wrote & designed the Interlab and Human Practices wiki pages.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 9 -->
+        <button id="Gia" type="button" data-bs-toggle="modal" data-bs-target="#modal-09" class="hex-grid__content btn">
+            <p>Gia</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-09">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Gia Balius</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-09"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-09"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:ibalius@ucsc.edu">ibalius@ucsc.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/gia-balius-554154246/">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-09" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hi my name is Gia and I am a fourth year MCD Biology student minoring in
+                                    Bioinformatics. The primary reason why I joined iGEM was the ample amount of labs I
+                                    took online due to the pandemic. I was half way through my junior year of college,
+                                    as a biology major, with very minimal in-person lab experience. I was so excited to
+                                    get into the lab when I finally moved back to Santa Cruz and happened to make it
+                                    onto the iGEM team filled with an amazing and intelligent group of people. iGEM has
+                                    opened my eyes to the world of synthetic biology and its incredulous value on
+                                    humanity. Working on this project, I have realized the great disconnect with access
+                                    to healthcare and what synthetic biology can do to make a difference. I plan to
+                                    continue my education into a grad school program and I cannot wait to see what the
+                                    future holds and what more I can learn.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-09" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Worked mainly in wet-lab aspects of project in which I carried out experiments for
+                                    producing <a class="glossaryRef" title="Exendin-4"
+                                        href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> in <i>E. coli</i> and
+                                    producing <a class="glossaryRef" title="Glucagon-Like Peptide 1 Receptor"
+                                        href="https://2022.igem.wiki/ucsc/glossary#GLP-1R">GLP-1R</a>.</li>
+                                <li>Assisted in protein purification by <a class="glossaryRef"
+                                        title="Fast Protein Liquid Chromatography"
+                                        href="https://2022.igem.wiki/ucsc/glossary#FPLC">FPLC</a> and <a
+                                        class="glossaryRef" title=""
+                                        href="https://2022.igem.wiki/ucsc/glossary#IMAC">IMAC</a> by gravity.</li>
+                                <li>Reviewed sanger sequencing results for confirmation of presence of Ex-4 insert
+                                    successfully transformed into <i>E. coli</i>.</li>
+                                <li>Worked closely with Suz Howells in hopes of spreading our project to the community
+                                    and to the campus. Facilitated meetings which allowed for articles to be published
+                                    on our team. </li>
+                                <li>Worked with pushing content onto wiki using HTML.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 10 -->
+        <button id="Thiago" type="button" data-bs-toggle="modal" data-bs-target="#modal-10"
+            class="hex-grid__content btn">
+            <p>Thiago</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-10">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Thiago Brasilerio</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-10"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-10"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:tbrasile@ucsc.edu">tbrasile@ucsc.edu</a><br>
+                    <a class="fromLeft"
+                        href="https://www.linkedin.com/in/thiago-brasileiro-feitosa-2940a6238">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-10" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Was hannin Gs, I’m Thiago, an international student from Brazil. I am a senior
+                                    double-majoring in Biomolecular Engineering & Bioinformatics and Business Management
+                                    Economics. Before moving away from home, I had no idea what bioengineering even was,
+                                    but surprisingly it lined extremely well with my life purpose. I am eager to promote
+                                    change and make large-scale societal impacts. iGEM provided me with extensive
+                                    experience in all aspects of start-up creation, and the opportunity I had to work
+                                    with such a passionate, intelligent, and driven team is invaluable. Coming from
+                                    someone that could never see myself in higher education, becoming a scientist,
+                                    engineer, and entrepreneur is an accomplishment I proudly use as fuel for my future
+                                    projects. I strive to spread the knowledge I acquire by traveling the world and
+                                    doing research / entrepreneurship, while breaking through the gatekeeping of
+                                    knowledge and enabling a second chance to less privileged people. Working with this
+                                    group of brilliant people that I now call as friends was definitely a vibe, and I am
+                                    very proud of our personal progress. I am sure I will miss the absurdly random and
+                                    nonsense routine conversations, camping trips, movie nights, questions of the week,
+                                    forced TikToks, and just chillin with y’all. I am excited to see what the future
+                                    awaits for all of us.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-10" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Headed fundraising of the <i>Helo</i> project for Spring Give.</li>
+                                <li>Did community outreach by presenting at Santa Cruz’s Midtown Takeover.</li>
+                                <li>Reached out and conducted virtual meetings with brazilian endocrinologists, primary
+                                    care providers, NGOs, and researchers working with diabetic patients.</li>
+                                <li>Involved in the wetlab work of the project: Expression of <a class="glossaryRef"
+                                        title="Exendin-4" href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> and
+                                    <a class="glossaryRef" title="Glucagon-Like Peptide 1 Receptor"
+                                        href="https://2022.igem.wiki/ucsc/glossary#GLP-1R">GLP-1R</a> in <i>E. coli</i>.
+                                </li>
+                                <li>Purified Ex-4 through <a class="glossaryRef" title=""
+                                        href="https://2022.igem.wiki/ucsc/glossary#IMAC">IMAC</a> by gravity and <a
+                                        class="glossaryRef" title="Fast Protein Liquid Chromatography"
+                                        href="https://2022.igem.wiki/ucsc/glossary#FPLC">FPLC</a>. </li>
+                                <li>Met with the 2022 Stony Brook iGEM team to discuss progress on <i>E. coli</i>
+                                    experiments.</li>
+                                <li>Assisted with Ex-4 plasmid design for <i>E. coli</i>.</li>
+                                <li>Typed up protocols into the wiki using HTML. Worked with Bootstrap 5 & CSS to help
+                                    style the website.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 11 -->
+        <button id="Chris" type="button" data-bs-toggle="modal" data-bs-target="#modal-11"
+            class="hex-grid__content btn">
+            <p>Christopher</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-11">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Christopher Schade</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-11"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-11"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:cschade@ucsc.edu">cschade@ucsc.edu</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-11" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>I joined iGEM because I wanted to work collaboratively on scientific inquiry, while
+                                    potentially making a positive human impact. iGEM has given me the opportunity to
+                                    challenge myself, while mixing work in both wet-lab and dry-lab. I’m a 3rd year
+                                    BioMolecular Engineering (BME) major at UCSC. When not pipetting or coding, I’m
+                                    LARPing, modeling 3D CGI, or participating in a D&D campaign. I aspire to travel and
+                                    attend grad school, especially since iGEM has opened my eyes to the world of
+                                    possibilities in synthetic biology.
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-11" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Headed wiki research, architectural design, development, & implementation from
+                                    inception to completion.</li>
+                                <li>Proofread & cleaned up all coded wiki content.</li>
+                                <li>Lead & assisted with Experiment 2 of Interlab study.</li>
+                                <li>Assisted miscellaneous wet-lab work for <i>E. coli</i> in <a class="glossaryRef"
+                                        title="" href="https://2022.igem.wiki/ucsc/glossary#Colony-PCR">Colony PCR</a>,
+                                    <a class="glossaryRef"
+                                        title="Sodium Dodecyl Sulfate-PolyAcrylamide Gel Electrophoresis"
+                                        href="https://2022.igem.wiki/ucsc/glossary#SDS-PAGE">SDS-PAGE</a>, & Gel
+                                    Electrophoresis.</li>
+                                <li>Participated in diagnostic analysis from wet-lab.</li>
+                                <li>Filmed & edited the promotional videos.</li>
+                                <li>Assisted in team branding with logo drafts & the hoodie merchandise design. Came up
+                                    with the team name <i>Helo</i>, which is short for the latin name for the Gila
+                                    monster, <i><u>Helo</u>derma suspectum</i>.</li>
+                                <li>Managed the team’s <a class="glossaryRef"
+                                        title="A free Voice-over-IP and instant messaging social platform. Communities reside on persistent chat room “servers”, which contain categorical voice and text channels for organized media sharing and communication."
+                                        href="https://2022.igem.wiki/ucsc/glossary#Discord">Discord</a> server.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 12 -->
+        <button id="Zoe" type="button" data-bs-toggle="modal" data-bs-target="#modal-12" class="hex-grid__content btn">
+            <p>Zo&euml;</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-12">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Zo&euml; Petroff</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-12"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-12"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:zpetroff@ucsc.edu">zpetroff@ucsc.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/zoe-petroff-6a6317230/">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-12" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Howdy! I’m Zo&euml;, a 3rd year Biomolecular Engineering and Bioinformatics major
+                                    with a passion for humanitarian progress via synthetic biology. I joined iGEM
+                                    because I have a love of scientific inquiry and collaboration. Interestingly, I
+                                    learned about the program from my work in student media at UCSC. I am a writer and
+                                    editor for the only student-led, undergraduate science magazine on campus. I am also
+                                    a member of the Student Media Council, which is where I met one of the captains from
+                                    last year’s team. They encouraged me to join, and after one frantic text message at
+                                    1 am, I interviewed for this year’s team. I frequently think about how one
+                                    panic-induced text has cascaded into this once-in-a-lifetime opportunity. I have
+                                    made so many valuable friendships through this team, while simultaneously obtaining
+                                    invaluable experience in a field of STEM that I love. In the future, I hope to get a
+                                    PhD in my current field of study and pursue a career where I get to help make the
+                                    world a more equitable place. I have a frog named Mochi, a cat named Nibbler, and a
+                                    bearded dragon named Linguine. I also love drawing, hiking, skiing and cooking in my
+                                    free time.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-12" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Analyzed Sequencing results for <a class="glossaryRef" title="Exendin-4"
+                                        href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> in <i>S.
+                                        cerevisiae</i> and <i>E. coli</i>, as well as <a class="glossaryRef"
+                                        title="Glucagon-Like Peptide 1 Receptor"
+                                        href="https://2022.igem.wiki/ucsc/glossary#GLP-1R">GLP-1R</a> in <i>E. coli</i>.
+                                </li>
+                                <li>Met with Stony Brook to discuss progress on <i>S. cerevisiae</i> experiments.</li>
+                                <li>Worked on wet-lab experiments for genomic expression of Ex-4 in <i>S.
+                                        cerevisiae</i>.</li>
+                                <li>Assisted promotional video production.</li>
+                                <li>Plasmid Design for Ex-4 in <i>S. cerevisiae</i> and <i>E. coli</i>, as well as
+                                    GLP-1R in <i>E. coli</i>.</li>
+                                <li>Designed parts pages.</li>
+                                <li>Made lizard logo for <i>Helo</i>.</li>
+                                <li>Presented our project and helped tour Soquel high school’s biotech class.</li>
+                                <li>Worked on implementation of wiki content and debugging of the website.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 13 -->
+        <button id="Cambell" type="button" data-bs-toggle="modal" data-bs-target="#modal-13"
+            class="hex-grid__content btn">
+            <p>Cambell</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-13">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Cambell Strand</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-13"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-13"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:cstrand@ucsc.edu">cstrand@ucsc.edu</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-13" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hello my name is Cambell Strand and I am a fourth year biomolecular engineering
+                                    student. While I was able to take some interesting classes during the pandemic, I
+                                    had virtually no lab experience. Even after I got into a lab, I realized I wanted to
+                                    be able to influence the direction of the project and that is why I decided to join
+                                    iGEM. There aren’t many chances in your undergraduate career where undergraduates
+                                    have full direction of the project, especially one that has the potential to make
+                                    such a big impact. I am super grateful for all the amazing people I have met, and
+                                    all the skills I have learned throughout these past nine months. Outside of school
+                                    and iGEM, I love to cook, work out, and play videogames. After I graduate, I plan to
+                                    attend grad school to earn either my masters or PhD in bioengineering.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-13" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Organized the lab, created a lab inventory spreadsheet, and managed incoming
+                                    equipment and chemicals.</li>
+                                <li>Helped head wiki and taught members how to push commits onto the website.</li>
+                                <li>Ran experiments for protein purification and analysis including <a
+                                        class="glossaryRef"
+                                        title="Sodium Dodecyl Sulfate-PolyAcrylamide Gel Electrophoresis"
+                                        href="https://2022.igem.wiki/ucsc/glossary#SDS-PAGE">SDS-PAGE</a> and <a
+                                        class="glossaryRef" title=""
+                                        href="https://2022.igem.wiki/ucsc/glossary#IMAC">IMAC</a>.</li>
+                                <li>Headed the revival of our <a class="glossaryRef"
+                                        title="Fast Protein Liquid Chromatography"
+                                        href="https://2022.igem.wiki/ucsc/glossary#FPLC">FPLC</a> for protein
+                                    purification.</li>
+                                <li>Reached out to schools in order to set up education opportunities.</li>
+                                <li>Presented our project and helped tour Soquel high school’s biotech class.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <li class="hex-grid__item">
+        <!-- 14 -->
+        <button id="Joanne" type="button" data-bs-toggle="modal" data-bs-target="#modal-14"
+            class="hex-grid__content btn">
+            <p>Joanne</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-14">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Joanne Shen</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-14"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-14"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:jeshen@ucsc.edu">jeshen@ucsc.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/joanne-shen-b2037b221/">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-14" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hi! My name is Joanne and I am a fifth year bioengineering major with a
+                                    bioelectronics focus. I joined iGEM because I wanted to experience the engineering
+                                    process in a more creatively open environment than that of a classroom. I hope to
+                                    pursue higher education and travel the world in the future to broaden my worldview.
+                                    In my free time I like to rock climb, go hiking with my friends, and listen to
+                                    music.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-14" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Purified TEV protease and <a class="glossaryRef" title="Exendin-4"
+                                        href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> through <a
+                                        class="glossaryRef" title=""
+                                        href="https://2022.igem.wiki/ucsc/glossary#IMAC">IMAC</a> by gravity and the <a
+                                        class="glossaryRef" title="Fast Protein Liquid Chromatography"
+                                        href="https://2022.igem.wiki/ucsc/glossary#FPLC">FPLC</a>.</li>
+                                <li>Met with researchers and experts in the field to further understand the current
+                                    methods that express our protein in a host.</li>
+                                <li>Modeling protein production, dosage-effect, and competitive binding.</li>
+                                <li>Collaboration with the 2022 Stony Brook iGEM team with Jonathan and Lauren.</li>
+                                <li>iGEM Tiktok management with Neo.</li>
+                                <li>Worked on implementation of wiki content and debugging of the website</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 15 -->
+        <button id="Nathan" type="button" data-bs-toggle="modal" data-bs-target="#modal-15"
+            class="hex-grid__content btn">
+            <p>Nathan</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-15">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Nathan Mccall</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-15"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-15"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:namccall@ucsc.edu">namccall@ucsc.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/nathan-mccall-92852a196/">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-15" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Choosing to be on iGEM came from a deep desire to help make a change in the world
+                                    whilst having the freedom to do so. From brainstorming ideas and helping construct
+                                    the project from the ground up, I have no doubt that this opportunity has changed my
+                                    academic and professional career for the better. Coming out of the pandemic with
+                                    essentially no lab experience to physically produce Exendin-4 from genetically
+                                    engineered <i>E. coli</i> and <i>S. cerevisiae</i> was a character development arc
+                                    that I would never have imagined before participating in iGEM. Going into my 4th
+                                    year as a biomolecular engineering and bioinformatics student, I have no idea what
+                                    the future holds for me. What I do know though is that being a part of this
+                                    extremely passionate and brilliant team has made me prepared for the next chapter of
+                                    my life.</li>
+                                <li>Outside of my professional life I enjoy hanging out with my friends and making mixed
+                                    drinks, cooking yummy food, watching anime and relaxing, long road trips to new and
+                                    exciting places, and playing video games.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-15" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Met with professors and researched algae, plants, cell-free chloroplasts, and yeast
+                                    as a viable host organism for <a class="glossaryRef" title="Exendin-4"
+                                        href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> production.</li>
+                                <li>Met with the Overlake high school and conducted educational outreach.</li>
+                                <li>Conducted experiments to produce Ex-4 & <a class="glossaryRef"
+                                        title="Glucagon-Like Peptide 1 Receptor"
+                                        href="https://2022.igem.wiki/ucsc/glossary#GLP-1R">GLP-1R</a> in <i>E. coli</i>.
+                                </li>
+                                <li>Ensured that sanger sequencing results aligned with our desired gene insert with
+                                    Geneious Prime.</li>
+                                <li>Headed and organized meetings with <a class="glossaryRef"
+                                        title="University of California, San Francisco"
+                                        href="https://2022.igem.wiki/ucsc/glossary#UCSF">UCSF</a> & Professor Gregory Ku
+                                    to discuss an in vivo pancreatic beta cell test for insulin release from our
+                                    recombinant Ex-4 from <i>S. cerevisiae</i> and <i>E. coli</i>.</li>
+                                <li>Met with the 2022 Stony Brook iGEM team to talk and give updates about <i>E.
+                                        coli</i>.</li>
+                                <li>Worked on implementation of wiki content and debugging of the website.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 16 -->
+        <button id="Priya" type="button" data-bs-toggle="modal" data-bs-target="#modal-16"
+            class="hex-grid__content btn">
+            <p>Haripriya</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-16">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Haripriya Govind</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-16"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-16"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:hgovind@ucsc.edu">hgovind@ucsc.edu</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-16" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>I am Haripriya Govind and I am pursuing a Bioelectronics Engineering degree at UCSC.
+                                    After introduction to iGEM through my major advisor, Greta Hull, and housemates, I
+                                    interviewed for the UCSC 2022 iGEM team. I aspired to be a member of iGEM to
+                                    participate in a meaningful project where I could directly apply my educational
+                                    pursuits and skill set. I am grateful to my family, team, teaching assistants,
+                                    principal investigator, and external supporters for their part in this experience.
+                                    Moreover, I am thankful to iGEM for providing a platform for participants and the
+                                    community to seek and improve solutions, using synthetic biology, that address
+                                    pervasive health concerns.</li>
+                                <li>iGEM has been an exciting opportunity to delve deeper into various aspects of my
+                                    major. This exposure improves my abilities in technical research and design,
+                                    interpersonal skills, and contributes to my personal growth. iGEM provides a unique
+                                    perspective on the local and global communities involved in and impacted by STEM
+                                    based projects. My experience empowers me to recognize my capabilities, engage my
+                                    creativity, and boldly explore my interests.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-16" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Led one discussion on parts of a Golden Gate cloning platform scientific report.
+                                </li>
+                                <li>Prepared a poster for fundraising; researched SBOL for visual representation.</li>
+                                <li>Helped email indigenous communities.</li>
+                                <li>Discussed safety protocols to ensure lab safety in experiments; researched IRB
+                                    guidelines for public communications as directed by UCSC Biological Safety Officer:
+                                    Karianne Terry.</li>
+                                <li>Provided support for wiki development, especially for the Notebook page.</li>
+                                <li>Prepared for and performed the Interlab calibration experiment and part of
+                                    Experiment 1.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 17 -->
+        <button id="Jonathan" type="button" data-bs-toggle="modal" data-bs-target="#modal-17"
+            class="hex-grid__content btn">
+            <p>Jonathan</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-17">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Jonathan Zau</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-17"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-17"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:jzau@ucsc.edu">jzau@ucsc.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/jonathan-zau-b947931b0">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-17" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hello, I'm Jonathan Zau, a fourth year Biomolecular Engineering and Bioinformatics
+                                    student. By far the most fulfilling aspect of iGEM is working with so many talented
+                                    people, especially my wonderful peers. They inspire me to challenge myself every
+                                    day, learning to enjoy each aspect of the project, no matter how late we stay
+                                    overtime. In the future, I plan on traveling throughout Asia before attending
+                                    graduate school to fulfill my dreams of becoming a mad scientist. When I'm not
+                                    working on <i>Helo</i>, I love surfing, the performing arts, eating Korean barbecue,
+                                    and beating Gabino at chess.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-17" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Coordinated meetings and interviewed endocrinologists, organization leaders, and
+                                    professors.</li>
+                                <li>Purified TEV protease and <a class="glossaryRef" title="Exendin-4"
+                                        href="https://2022.igem.wiki/ucsc/glossary#Ex-4">Ex-4</a> through <a
+                                        class="glossaryRef" title=""
+                                        href="https://2022.igem.wiki/ucsc/glossary#IMAC">IMAC</a> by gravity and <a
+                                        class="glossaryRef" title="Fast Protein Liquid Chromatography"
+                                        href="https://2022.igem.wiki/ucsc/glossary#FPLC">FPLC</a>.</li>
+                                <li>Performed general lab protocols: making media, making competent cells,
+                                    transformation.</li>
+                                <li>Led design, construction, and implementation of computational models.</li>
+                                <li>Collaborated with the 2022 SUNY at Stony Brook iGEM team to troubleshoot lab
+                                    practices, wrote protein production model for their protein in <i>S. cerevisiae</i>.
+                                </li>
+                                <li>Worked on implementation of wiki content and debugging of the website.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <li class="hex-grid__item">
+        <!-- 18 -->
+        <button id="Vid" type="button" data-bs-toggle="modal" data-bs-target="#modal-18" class="hex-grid__content btn">
+            <p>Vidhata</p>
+        </button>
+    </li>
+
+    <!--- The Modal --->
+    <div class="modal fade" id="modal-18">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!--- Modal Header --->
+                <div class="modal-header">
+                    <h4 class="modal-title me-5">Vidhata Singh</h4>
+                    <!--- Nav tabs --->
+                    <ul class="nav nav-tabs ms-5" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#bio-18"><b>Bio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#attributions-18"><b>Attributions</b></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--- Modal body --->
+                <div class="modal-body">
+                    <h5>Team Member</h5>
+                    <a class="fromLeft email" href="mailto:vdsingh@ucsc.edu">vdsingh@ucsc.edu</a><br>
+                    <a class="fromLeft" href="https://www.linkedin.com/in/vidhata-singh-01369a162">LinkedIn</a>
+
+                    <!--- Tab panes --->
+                    <div class="tab-content">
+                        <div id="bio-18" class="container tab-pane active">
+                            <hr>
+                            <ul class="noBP">
+                                <li>Hi, I’m Vidhata but I usually go by Vid. I’m a 4th year Biomolecular Engineering and
+                                    Bioinformatics undergraduate student. I joined iGEM with the motivation to help
+                                    people and to make some sort of impact, while having the independence of choosing
+                                    how we make said impact. Much of this experience has consisted of me learning about
+                                    synthetic biology by participating in various aspects of the project, continuously
+                                    being challenged by my peers, and learning front-end web development. In the future,
+                                    I hope to get a masters in bioinformatics and computer science and get a job in
+                                    industry.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div id="attributions-18" class="container tab-pane fade">
+                            <hr>
+                            <ul>
+                                <li>Coordinated meetings with NGOs, Endocrinologists, and various other healthcare
+                                    professionals.</li>
+                                <li>Helped work on interlab and followed iGEM’s basic protocols.</li>
+                                <li>Aided the research of mathematical modeling and run the modeling aspect of the
+                                    project (dosage-effect, competitive binding, and protein production).</li>
+                                <li>Worked on <i>S. cerevisiae</i> (inoculation, tested plasmid integration, and protein
+                                    production), worked through basic protocols for inoculation, media prep, and gel
+                                    electrophoresis.</li>
+                                <li>Helped other members with human outreach and worked with a local Santa Cruz high
+                                    school to conduct a tour of our campus.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal footer --->
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+</ul>
+
+<div class="accordion bg-dark my-5" id="Citation-Accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="Honorable-Mention-AccordionHeading1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Additional Attributions
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="Honorable-Mention-AccordionHeading1"
+            data-bs-parent="#Citation-Accordion">
+            <div class="accordion-body">
+                <ol class="noBP">
+                    <br>
+                    <li id="Honorable-Mention1">Rohinton T Kamakaka:
+                        <ul>
+                            <li>Provided us with S. cerevisiae yeast starter cultures and plasmid backbones for
+                                transfection of our DNA construct into E. coli</li>
+                            <li>Advised us on utilization of the <a class="glossaryRef" title="Molecular Cloning"
+                                    href="https://2022.igem.wiki/ucsc/glossary#MoClo">MoClo</a> library, and proper
+                                safety and handling of yeast in lab</li>
+                            <li>Supported our wet lab in the homologous repair of S. cerevisiae to contain Ex-4</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li id="Honorable-Mention2">Rebecca DuBois:
+                        <ul>
+                            <li>Provided us with <a class="glossaryRef" title="Tobacco Etch Virus protease"
+                                    href="https://2022.igem.wiki/ucsc/glossary#TEV-protease">TEV protease</a> expressing
+                                E. coli, Histidine Antibodies, and other lab materials</li>
+                            <li>Had extensive correspondence and advised us in preparation and troubleshooting for
+                                protein expression, purification, and SDS-PAGE results</li>
+                            <li>Helped us prepare assays for bio-layer interferometry using her lab's Octet machine
+                                for Ex-4's binding affinity analysis</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li id="Honorable-Mention3">Samuel Pine:
+                        <ul>
+                            <li>Mentored our team from Belgium and advised us on the overall direction of our project
+                                including next steps in the wet lab and Ex-4 bioavailability via bi-weekly virtual
+                                meetings</li>
+                            <li>Provided valuable feedback on Helo's implementation and connecting our vision to a
+                                marketable product</li>
+                            <li>Guided us to discussions with experts at Sanofi specifically in relation to half life
+                                extenders and fundraising</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li id="Honorable-Mention4">Suz Howells:
+                        <ul>
+                            <li>Facilitated interactions with UC Santa Cruz alumni at Midtown Takeover event and engaged
+                                in collaboration efforts to shared our project to the community</li>
+                            <li>Guided us through The Spring Give, a fundraising event that allowed us to raise money to
+                                carry out our project</li>
+                            <li>Provided us with ample contacts to speak to professionals such as endocrinologists and
+                                global health specialists</li>
+                            <li>Provided us a connection with Melissa Weckerle, Communications Specialist at UC Santa
+                                Cruz, who interviewed members of our team and wrote an article about the work we have
+                                been doing. This allowed for a platform in which the community could see our project and
+                                reach out to our team</li>
+                            <li>Helped us get a room in which we could host Soquel High School students and helped organize logistics for permission slips</li>
+                        </ul>
+                    </li>
+
+                    <hr>
+                    <p> We would additionally like to acknowledge the following individuals for their contributions to
+                        Helo:</p>
+
+                    <p>
+
+                    <b>Dr. Patricia Wu</b> (Kaiser Permanente) for their explanation of medical consensus on current
+                    diabetes treatment, <b>Dr. John Demko</b> (University of California, San Francisco) and <b>Dr.
+                        Sunder
+                        Mudaliar</b> (University of California, San Diego) for giving us background on GLP-1 RA
+                    therapeutics, <b>Dr. Matt Sparke</b> (University of California, Santa Cruz) for building our
+                    background
+                    about global health and communities lacking diabetes care, <b>Dr. Somen Nandi</b> (University of
+                    California, Davis) for advice on Agrobacterium-mediated gene transfer and transgenic plants, Dr.
+                    <b>Lawrence DeGhetaldi</b> (Palo Alto Medical Foundation) for insight on the feasibility of Helo
+                    being
+                    adopted into patient care, <b>Jessica Bulleri</b> (Diabetes Prevention Program, Santa Cruz) for
+                    sharing
+                    general background on pre-diabetes, <b>Ted Malpass</b> (University of California, Santa Cruz) for
+                    connecting us with Universities Allied for Essential Medicine to enhance the scope of our
+                    outreach, <b>Dr. David Ghilarducci</b> (Deputy Health Officer and EMS Medical Director, Santa Cruz)
+                    for
+                    presenting to us about the pathology of diabetes and common treatment mechanisms, <b>Dr. Sebastian
+                        Bernales</b> (Co-Founder and Board Member at Metagenomi) for advising and proposing questions
+                    about
+                    the implementation of Helo, <b>Alexander Wolf</b> (Dean of Baskin Engineering) and <b>Paul L
+                        Koch</b> (Dean of
+                    Physical &amp; Biological Sciences Division) for helping fund Helo.
+                    </p>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<br>
+
+{% endblock %}
