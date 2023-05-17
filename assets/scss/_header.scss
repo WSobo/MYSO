@@ -1,0 +1,44 @@
+header {
+    //color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    .container{
+        width: 100%;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+
+        max-width: 1600px;
+        margin: 0 auto;
+        padding-left: 64px;
+        padding-right: 64px;
+
+        h2{
+            color: inherit;
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: 600;
+            span{
+                font-weight: 900;
+                color: rgb(48, 154, 27);
+            }
+        }
+        nav{
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(7, auto);
+            font-size: 24px;
+            a{
+                color: inherit;
+               
+                text-decoration: none;
+            }
+        }
+
+    }
+}

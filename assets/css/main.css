@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Fira Sans", "Sans Serif";
+}
+
+header {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+header .container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fefefe;
+}
+header .container a {
+  text-decoration: none;
+}
+header .container a h2 {
+  color: #F5F5DC;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+header .container a h2 span {
+  font-weight: 900;
+  color: #4cc812;
+}
+header .container nav {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(7, auto);
+  font-size: 24px;
+}
+@media (max-width: 767px) {
+  header .container nav {
+    display: none;
+  }
+}
+header .container nav a {
+  color: inherit;
+  font-size: 20px;
+  text-decoration: none;
+}
+header.is-scrolling {
+  background-color: #ECA869;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+header.is-scrolling .container {
+  padding-top: 24px;
+  padding-bottom: 0px;
+}
+
+.header2 {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: #ECA869;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.header2 .container {
+  padding-top: 24px;
+  padding-bottom: 0px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fefefe;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+@media (max-width: 1025px) {
+  .container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #FFF;
+  margin: 6px 0px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+          transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  -webkit-transform: rotate(45deg) translate(-9px, -8px);
+          transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: #12002F;
+  padding-top: 120px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+  left: 202px;
+}
+
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  background-color: #1f103F;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.mobile-nav a:hover {
+  background-color: #24104f;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #313131;
+}
+
+.button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  display: inline-block;
+  color: #FFF;
+  font-size: 20px;
+  background-color: #38be53;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .button {
+    font-size: 18px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+main section.banner {
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/mushroom1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  main section.banner {
+    background-position: 80% 100%;
+  }
+}
+main section.banner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: #451308;
+  opacity: 0.45;
+}
+main section.banner .container {
+  position: relative;
+  z-index: 1;
+  margin-left: 0px;
+}
+main section.banner .container h1 {
+  font-size: 58px;
+  margin-bottom: 32px;
+}
+main section.banner .container h1 span {
+  color: #38be53;
+  font-size: 72px;
+}
+@media (max-width: 767px) {
+  main section.banner .container h1 span {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  main section.banner .container h1 {
+    font-size: 24px;
+  }
+}
+main section.banner .container h3 {
+  padding-bottom: 18px;
+  font-style: italic;
+}
+@media (max-width: 767px) {
+  main section.banner .container h3 {
+    font-size: 20px;
+  }
+}
+main section.banner .container a {
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: 300px;
+  -webkit-box-shadow: 0, 6, 12, rgba(0, 0, 0, 0.1);
+          box-shadow: 0, 6, 12, rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  main section.banner .container a {
+    font-size: 12px;
+    margin-left: 30px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+}
+main .services {
+  background-color: #F5F5DC;
+}
+main .services .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+main .services .container .services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 1024px) {
+  main .services .container .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  main .services .container .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+main .services .container .services-grid .service {
+  background-color: #FFF;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+main .services .container .services-grid .service .img-box {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom: 5px solid #38be53;
+  cursor: pointer;
+}
+main .services .container .services-grid .service .img-box .service-image {
+  display: block;
+  float: center;
+  height: 212px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+main .services .container .services-grid .service .content {
+  padding: 16px;
+}
+main .projects {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #B5D5C5;
+}
+main .projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+  main .projects .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  main .projects .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+main .projects .projects-grid .project {
+  background-image: url("../images/mushroom2.jpg");
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+main .projects .projects-grid .project .content {
+  opacity: 0;
+  color: #FFF;
+  padding: 16px;
+  background-color: rgba(64, 39, 68, 0.8);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+main .projects .projects-grid .project .content h3 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+@media (max-width: 1024px) {
+  main .projects .projects-grid .project .content h3 {
+    font-size: 28px;
+  }
+}
+main .projects .projects-grid .project .content p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+@media (max-width: 1024px) {
+  main .projects .projects-grid .project .content p {
+    font-size: 16px;
+  }
+}
+main .projects .projects-grid .project:hover .content {
+  opacity: 1;
+}
+main .projects .center {
+  text-align: center;
+}
+main .contact {
+  background-color: #617a55;
+  height: 2000px;
+}
+main .contact .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+main .contact .container h2 {
+  color: #FFF;
+}
+main .contact .container form {
+  display: block;
+  margin: 0 auto;
+  max-width: 680px;
+}
+main .contact .container form .form-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 16px;
+}
+@media (max-width: 767px) {
+  main .contact .container form .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+main .contact .container form .form-grid .form-element, main .contact .container form .form-grid .form-area {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  display: block;
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 20px;
+  color: #313131;
+}
+main .contact .container form .form-grid .form-element::-webkit-input-placeholder, main .contact .container form .form-grid .form-area::-webkit-input-placeholder {
+  color: #AAA;
+}
+main .contact .container form .form-grid .form-element::-moz-placeholder, main .contact .container form .form-grid .form-area::-moz-placeholder {
+  color: #AAA;
+}
+main .contact .container form .form-grid .form-element:-ms-input-placeholder, main .contact .container form .form-grid .form-area:-ms-input-placeholder {
+  color: #AAA;
+}
+main .contact .container form .form-grid .form-element::-ms-input-placeholder, main .contact .container form .form-grid .form-area::-ms-input-placeholder {
+  color: #AAA;
+}
+main .contact .container form .form-grid .form-element::placeholder, main .contact .container form .form-grid .form-area::placeholder {
+  color: #AAA;
+}
+main .contact .container form .form-grid .form-area {
+  grid-column: 1/-1;
+}
+main .contact .container form .right-align {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .hide-mob {
+    display: block;
+  }
+}
