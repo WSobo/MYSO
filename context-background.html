@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MYSO | Template</title>
+    <link
+      rel="shortcut icon"
+      sizes="32x32"
+      href="assets/images/MYSO_LOGO.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header2">
+      <div class="container">
+        <a href="index.html">
+          <h2>Mycelliall<span>Solutions.</span></h2>
+        </a>
+        <nav>
+          <a href="#">Home</a>
+          <span>|</span>
+          <a href="#">Projects</a>
+          <span>|</span>
+          <a href="#">Journal</a>
+          <span>|</span>
+          <a href="#">Team</a>
+        </nav>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+    </header>
+    <nav class="mobile-nav">
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Journal</a>
+      <a href="#">Team</a>
+    </nav>
+
+    <div class="row gx-3 mx-0">
+      <!---- Side Pattern ---->
+      <div class="col-lg-2 col-md-1 d-md-block d-sm-none p-0 contentLeft">
+        <div class="sidePattern"></div>
+      </div>
+
+      <!---- Page Content ---->
+      <div class="col-lg-8 col-md-10 col-sm-12 contentCenter">
+        <h4 id="POCintro" class="sectionHead">
+          <strong>Engineering <i>E. coli</i></strong>
+        </h4>
+        <div class="bodyParagraph">
+          <p>
+            Our team used
+            <a
+              class="glossaryRef"
+              title="E_coli"
+              href="https://2022.igem.wiki/ucsc/glossary#E_coli"
+              ><i>E. coli</i></a
+            >
+            as an initial experimental model for
+            <a
+              class="glossaryRef"
+              title="Exendin-4"
+              href="https://2022.igem.wiki/ucsc/glossary#Ex-4"
+              >Ex-4</a
+            >
+            production. <i>E. coli</i> has fast growth kinetics with a doubling
+            time of approximately twenty minutes
+            <a class="citation" href="#Citation-Accordion">[1]</a> making it a
+            suitable starting organism given the limited time frame of our
+            project. <i>E. coli</i> has led to much of our fundamental
+            understanding of concepts, such as protein synthesis and
+            purification <a class="citation" href="#Citation-Accordion">[2]</a>.
+            Additionally, <i>E. coli</i> has a high theoretical transformation
+            efficiency and is known to have a high yield of protein production
+            while being easily engineerable
+            <a class="citation" href="#Citation-Accordion">[3]</a>. This makes
+            <i>E. coli</i> the ideal candidate for testing the expression of
+            Ex-4 protein in a microbial system.
+          </p>
+
+          <img
+            src="https://static.igem.wiki/teams/4190/wiki/figures/poc-image-coli-gel-revised.jpg"
+            class="figureIMG"
+          />
+          <p class="landscapeImage">
+            <strong
+              >Figure 1: Agarose gel electrophoresis of
+              <a
+                class="glossaryRef"
+                title="DH10B"
+                href="https://2022.igem.wiki/ucsc/glossary#DH10B"
+                >DH10B</a
+              >
+              <a
+                class="glossaryRef"
+                title="Colony-PCR"
+                href="https://2022.igem.wiki/ucsc/glossary#Colony-PCR"
+                >colony PCR</a
+              >
+              samples. The gel confirms that the
+              <a
+                class="glossaryRef"
+                title="Recombination"
+                href="https://2022.igem.wiki/ucsc/glossary#Recombination"
+                >recombinant</a
+              >
+              Ex-4 present is in agreement with the calculated molecular length
+              of 347 base pairs. The positive control of recombinant GFP was
+              confirmed as it is in agreement with the length of 914 base
+              pairs.</strong
+            >
+          </p>
+          <div class="accordion bg-dark my-5" id="Figure1-Accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Figure1-AccordionHeading1">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTable"
+                  aria-expanded="false"
+                  aria-controls="collapseTable"
+                >
+                  Figure 1 Table
+                </button>
+              </h2>
+              <div
+                id="collapseTable"
+                class="accordion-collapse collapse"
+                aria-labelledby="Figure1-AccordionHeading1"
+                data-bs-parent="#Figure1-Accordion"
+              >
+                <div class="accordion-body">
+                  <table class="table table-dark">
+                    <tbody>
+                      <tr>
+                        <th>Lane</th>
+                        <th>Contents</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>1 kB plus ladder.</td>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <td>
+                          Colony PCR sample of amplified Ex-4 (expected size
+                          ~347 bp).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <td>
+                          Colony PCR sample of amplified Ex-4 (expected size
+                          ~347 bp).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <td>
+                          Colony PCR sample of amplified Ex-4 (expected size
+                          ~347 bp).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <td>
+                          Colony PCR sample of amplified Ex-4 (expected size
+                          ~347 bp).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <td>
+                          Colony PCRsample of amplified Ex-4 (expected size ~347
+                          bp).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <td>
+                          Failed Colony PCR sample of amplified Ex-4 (expected
+                          size ~347 bp).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <td>
+                          Colony PCR sample of amplified GFP (expected size ~914
+                          bp).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>9</th>
+                        <td>
+                          Colony PCR sample of GFP from DH10B cells (expected
+                          size ~914 bp).
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <p>
+            After linearizing the pET28:GFP
+            <a
+              class="glossaryRef"
+              title="Plasmid"
+              href="https://2022.igem.wiki/ucsc/glossary#Plasmid"
+              >plasmid</a
+            >
+            through inverse PCR, we introduced our Ex-4 gene into the pET28
+            backbone using Golden Gate Assembly (<a
+              class="glossaryRef"
+              title="GGA"
+              href="https://2022.igem.wiki/ucsc/glossary#GGA"
+              >GGA</a
+            >). To confirm this was successful, we ran Ex-4 gene
+            <a
+              class="glossaryRef"
+              title="Amplicon"
+              href="https://2022.igem.wiki/ucsc/glossary#Amplicon"
+              >amplicons</a
+            >
+            on a DNA gel electrophoresis (Figure 1). We observed bands at the
+            expected size of 347 base pairs, indicating that the insert was
+            correctly assembled within our plasmid. By analyzing the gel, the
+            colonies that exhibited the desired plasmid construction were sent
+            for
+            <a
+              class="glossaryRef"
+              title="Sanger-Sequencing"
+              href="https://2022.igem.wiki/ucsc/glossary#Sanger-Sequencing"
+              >Sanger Sequencing</a
+            >
+            to confirm the Ex-4 gene was in fact present and did not contain
+            nucleotide mutations. The chromatogram of these results is displayed
+            in Figure 2.
+          </p>
+          <br />
+          <p>
+            Once we confirmed our plasmid contained the Ex-4 insert, we
+            proceeded with transformation in protein producing
+            <a
+              class="glossaryRef"
+              title="BL21"
+              href="https://2022.igem.wiki/ucsc/glossary#BL21"
+              >BL21</a
+            >
+            <i>E. coli</i>. Colony PCR confirmed our transformants contained the
+            Ex-4 encoding plasmid. Ex-4 production was induced via the T7
+            promoter by using Isopropyl β-D-1-thiogalactopyranoside (IPTG) and
+            purified using immobilized metal affinity chromatography (<a
+              class="glossaryRef"
+              title="IMAC"
+              href="https://2022.igem.wiki/ucsc/glossary#IMAC"
+              >IMAC</a
+            >) via cobalt resin columns. Afterwards, elutions were analyzed
+            using spectrophotometry, and samples with high absorbance at 280 nm
+            (A280) were run on an
+            <a
+              class="glossaryRef"
+              title="SDS-PAGE"
+              href="https://2022.igem.wiki/ucsc/glossary#SDS-PAGE"
+              >SDS-PAGE</a
+            >
+            (Figure 3). A280 is the light wavelength used to measure protein
+            density, meaning a high A280 value correlates with a high protein
+            yield. We observed bands around 10
+            <a
+              class="glossaryRef"
+              title="kD"
+              href="https://2022.igem.wiki/ucsc/glossary#kD"
+              >kD</a
+            >, this is close to 6.45 kD, the expected weight of our Histidine
+            tagged (<a
+              class="glossaryRef"
+              title="His-Tag"
+              href="https://2022.igem.wiki/ucsc/glossary#His-Tag"
+              >His-tag</a
+            >) Ex-4 protein. This suggests that we accurately isolated and
+            purified Ex-4, given no other His-tagged proteins exist within our
+            pET28 plasmid.
+          </p>
+
+          <br />
+          <img
+            src="https://static.igem.wiki/teams/4190/wiki/figures/poc-sanger-revised.png"
+            class="figureIMG"
+          />
+          <p class="landscapeImage">
+            <strong
+              >Figure 2. De Novo Assembly of Ex-4 insert in DH10B transfected
+              <i>E. coli</i> plasmid after Sanger Sequencing. Four colonies were
+              sequenced, yielding a total of eight reads: four forward and four
+              reverse. Each chromatogram aligned to our designed Ex-4 gene
+              insert (bottom row, highlighted in blue) indicating the
+              transformants have no mutations.</strong
+            >
+          </p>
+
+          <br />
+          <img
+            src="https://static.igem.wiki/teams/4190/wiki/figures/poc-sds-coli-revised.jpg"
+            class="figureIMG"
+          />
+          <p class="landscapeImage">
+            <strong
+              >Figure 3. SDS-PAGE of Ex-4 in protein producing BL21
+              <i>E. coli</i>.
+            </strong>
+          </p>
+          <div class="accordion bg-dark my-5" id="Figure2-Accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Figure2-AccordionHeading1">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTable2"
+                  aria-expanded="false"
+                  aria-controls="collapseTable2"
+                >
+                  Figure 3 Table
+                </button>
+              </h2>
+              <div
+                id="collapseTable2"
+                class="accordion-collapse collapse"
+                aria-labelledby="Figure2-AccordionHeading1"
+                data-bs-parent="#Figure2-Accordion"
+              >
+                <div class="accordion-body">
+                  <table class="table table-dark">
+                    <tbody>
+                      <tr>
+                        <th>Lane</th>
+                        <th>Contents</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>250 kD precision plus protein ladder</td>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <td>
+                          Elution samples isolated using IMAC, band at 10 kD
+                          indicates presence of Ex-4(Expected size ~6.45 kD)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <td>
+                          Elution samples isolated using IMAC, band at 10 kD
+                          indicates presence of Ex-4(Expected size ~6.45 kD)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <td>
+                          Elution samples isolated using IMAC, band at 10 kD
+                          indicates presence of Ex-4(Expected size ~6.45 kD)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <td>wash samples from IMAC</td>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <td>wash samples from IMAC</td>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <td>wash samples from IMAC</td>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th>9</th>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th>10</th>
+                        <td>250 kD precision plus protein ladder</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <p>
+            <i>E. coli</i> protein synthesis is imperative to the implementation
+            of our project. Being able to produce our recombinant protein
+            successfully through plasmid transcription and translation
+            demonstrates that the Ex-4 gene we designed is capable of
+            synthesizing amino acids.
+            <strong
+              >Had we not been able to express our peptide in <i>E. coli</i>,
+              our project would not have progressed onto the next phase</strong
+            >. Gaining experience with manipulating microorganisms, learning
+            standard laboratory techniques, and practicing how to diagnose
+            errors within E.coli gave us the foundation to pursue creating an
+            oral Type II diabetic (<a
+              class="glossaryRef"
+              title="T2D"
+              href="https://2022.igem.wiki/ucsc/glossary#T2D"
+              >T2D</a
+            >) medication in a
+            <a
+              class="glossaryRef"
+              title="GRAS"
+              href="https://2022.igem.wiki/ucsc/glossary#GRAS"
+              >GRAS</a
+            >
+            organism. The next step was to perform the same protein purification
+            assay as <i>E. coli</i> in
+            <a
+              class="glossaryRef"
+              title="S_cerevisiae"
+              href="https://2022.igem.wiki/ucsc/glossary#LEU2"
+              >LEU2</a
+            >
+            and
+            <a
+              class="glossaryRef"
+              title="TRP1"
+              href="https://2022.igem.wiki/ucsc/glossary#S_cerevisiae"
+              ><i>S. cerevisiae</i></a
+            >.
+          </p>
+        </div>
+        <h4 id="ScereEx-4" class="sectionHead">
+          <strong>Engineering <i>S. cerevisiae</i></strong>
+        </h4>
+        <div class="bodyParagraph">
+          <p>
+            <strong
+              >Our first step towards implementating Helo in the real world was
+              stable, genomic integration of our Ex-4 sequence into a GRAS
+              organism.</strong
+            >
+            We chose to integrate the Ex-4 sequence into the
+            <i>S. cerevisiae</i> genome via homologous recombination. This was
+            achieved by designing our plamsids with homology regions flanking
+            our insert that correspond to sites within the
+            <i>S.cerevisiae</i> genomic DNA. The
+            <a
+              class="glossaryRef"
+              title="LEU2"
+              href="https://2022.igem.wiki/ucsc/glossary#LEU2"
+              >LEU2</a
+            >
+            and
+            <a
+              class="glossaryRef"
+              title="TRP1"
+              href="https://2022.igem.wiki/ucsc/glossary#TRP1"
+              >TRP1</a
+            >
+            have homology arms that are characterized in
+            <a
+              class="glossaryRef"
+              title="MoClo"
+              href="https://2022.igem.wiki/ucsc/glossary#MoClo"
+              >Modular Cloning Library (MoClo)</a
+            >, which is why we chose to integrate at these sites.
+          </p>
+          <p>
+            We sequenced the isolated genomic DNA to confirm the insert,
+            performed protein purification, and ran a SDS-PAGE to assess the
+            size of the protein being produced. Our genomic DNA gel
+            electrophoresis showed bands at the expected nucleotide size for all
+            sets of primers at both the LEU2 and TRP1 sites (Figure 4). Sanger
+            Sequencing results from the isolated genomic DNA sample showed a
+            100% match with no mutations in the Ex-4 protein coding gene (Figure
+            5). The <i>S. cerevisiae</i> Ex-4 genomic insert has a molecular
+            weight of 10.5 kD. Our SDS-PAGE confirmed that the modified TRP1
+            site within <i>S. cerevisiae</i> produced a His-tagged protein with
+            a molecular weight around 10 kD when induced by galactose (Figure
+            6). Since the plasmids containing the Ex-4 gene do not have an
+            origin of replication for <i>S. cerevisiae</i>, expression of the
+            plasmids’ features in <i>S. cerevisiae</i> cells is only attainable
+            through genomic integration.
+          </p>
+
+          <img
+            src="https://static.igem.wiki/teams/4190/wiki/figures/poc-image4.jpg"
+            class="figureIMG"
+          />
+          <p class="landscapeImage">
+            <strong
+              >Figure 4. Agarose gel electrophoresis of
+              <i>S. cerevisiae</i> genomic DNA PCR samples. All lanes match the
+              expected kb of their associated gene fragments.</strong
+            >
+          </p>
+          <div class="accordion bg-dark my-5" id="Figure4-Accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Figure4-AccordionHeading1">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTable3"
+                  aria-expanded="false"
+                  aria-controls="collapseTable3"
+                >
+                  Figure 4 Table
+                </button>
+              </h2>
+              <div
+                id="collapseTable3"
+                class="accordion-collapse collapse"
+                aria-labelledby="Figure4-AccordionHeading1"
+                data-bs-parent="#Figure4-Accordion"
+              >
+                <div class="accordion-body">
+                  <table class="table table-dark">
+                    <tbody>
+                      <tr>
+                        <th>Lane</th>
+                        <th>Contents</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>
+                          Ex-4 Gene insert (expected size ~603 bp) from
+                          <a
+                            class="glossaryRef"
+                            title="mg-int-trp1-hyg_1432-4a"
+                            href="https://2022.igem.wiki/ucsc/glossary#mg-int-trp1-hyg_1432-4a"
+                            >mg-int-trp1-hyg_1432-4a</a
+                          >
+                          plasmid after genome integration.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <td>
+                          LEU2 site Genomic DNA without integration (expected
+                          size ~4500 bp)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <td>
+                          Integration of promoter, Ex-4, and terminator at TRP1
+                          site in genomic DNA (expected size ~3500 bp)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <td>
+                          <a
+                            class="glossaryRef"
+                            title="GAL1"
+                            href="https://2022.igem.wiki/ucsc/glossary#GAL1"
+                            >GAL1</a
+                          >
+                          promoter, Ex-4 gene insert, and partial terminator
+                          sequence amplification to confirm successful golden
+                          gate reaction (expected size ~1100 bp)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <td>
+                          Ex-4 Gene insert (expected size ~603 bp) from plasmid
+                          <a
+                            class="glossaryRef"
+                            title="mg-int-leu2-kan_1420"
+                            href="https://2022.igem.wiki/ucsc/glossary#mg-int-leu2-kan_1420"
+                            >mg-int-leu2-kan_1420</a
+                          >
+                          plasmid after genome integration.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <td>
+                          Integration of promoter, Ex-4, and terminator at LEU2
+                          site in genomic DNA (expected size ~4000 bp)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <td>
+                          Trp site Genomic DNA without integration (expected
+                          size ~1800 bp)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <td>
+                          GAL1 promoter, Ex-4 gene insert, and partial
+                          terminator sequence amplification to confirm
+                          successful golden gate reaction (expected size ~1100
+                          bp)
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <img
+            src="https://static.igem.wiki/teams/4190/wiki/figures/poc-image5.png"
+            class="figureIMG"
+          />
+          <p class="landscapeImage">
+            <strong
+              >Figure 5. De Novo Assembly of Sanger Sequencing results from
+              genomically integrated Ex-4 insert in <i>S. cerevisiae</i>.
+              Sequencing was performed on both isolated DNA from the LEU2 and
+              TRP1 integration sites in the genome. LEU2 results occupy the
+              first reverse and forward Sanger Sequencing results and TRP1
+              occupies the second reverse and forward Sanger Sequencing result.
+              The chromatogram peaks for both LEU2 and TRP1 have a 100% match
+              with no mutations in the Ex-4 protein coding gene. This shows that
+              the insert we designed was successfully integrated within the
+              genome of <i>S. cerevisiae</i>.</strong
+            >
+          </p>
+
+          <img
+            src="https://static.igem.wiki/teams/4190/wiki/figures/poc-image-yeast-revised.jpg"
+            class="figureIMG"
+          />
+          <p class="landscapeImage">
+            <strong
+              >Figure 6. SDS-PAGE of genomically synthesized Ex-4 at the TRP1
+              site in <i>S. cerevisiae</i>. Lanes 4, 5 and 6 all contain bands
+              at around 10 kD, which matches the expected size of our His-tagged
+              Ex-4 protein (10.5 kD, computed through protparam). This confirms
+              that our <i>S. cerevisiae</i> is producing a protein that is at
+              the expected size of His-tagged Ex-4.</strong
+            >
+          </p>
+          <div class="accordion bg-dark my-5" id="Figure6-Accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="Figure6-AccordionHeading1">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTable4"
+                  aria-expanded="false"
+                  aria-controls="collapseTable4"
+                >
+                  Figure 6 Table
+                </button>
+              </h2>
+              <div
+                id="collapseTable4"
+                class="accordion-collapse collapse"
+                aria-labelledby="Figure6-AccordionHeading1"
+                data-bs-parent="#Figure6-Accordion"
+              >
+                <div class="accordion-body">
+                  <table class="table table-dark">
+                    <tbody>
+                      <tr>
+                        <th>Lane</th>
+                        <th>Contents</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>
+                          Bio-Rad Precision Plus Protein Dual Color Standards
+                          Ladder
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <td>Lysed cell debris before protein purification</td>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <td>Protein Flow-through from cobalt column</td>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <td>Wash from cobalt column</td>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <td>
+                          TRP1 site 50 mM imidazole elution (concentration:
+                          1.352 mg/mL)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <td>
+                          TRP1 site 100 mM imidazole elution (concentration:
+                          0.995 mg/mL)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <td>
+                          TRP1 site 100 mM imidazole elution (concentration:
+                          0.464 mg/mL)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <td>
+                          TRP1 site 100 mM imidazole elution (concentration:
+                          0.378 mg/mL)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>9</th>
+                        <td>
+                          TRP1 site 150 mM imidazole elution (concentration:
+                          0.384 mg/mL)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>10</th>
+                        <td>
+                          TRP1 site 150 mM imidazole elution (concentration:
+                          0.323 mg/mL)
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <p>
+            <strong
+              >By not relying on a plasmid for protein production, Exendin-4 may
+              remain accessible in <i>S. cerevisiae</i> for many generations. We
+              hypothesize stable integration of Exendin-4 gives global
+              communities and pharmacies the power to propagate what was
+              originally expensive and inaccessible.</strong
+            >
+            With this success, we plan to utilize the elastin-based polypeptide
+            half-life extender, introduce a LAC9 promoter for milk based
+            induction, grow our culture in a fruit and sap based growth media
+            <a class="citation" href="#Citation-Accordion">[4]</a>, and modify
+            <i>S. cerevisiae</i> surface proteins for oral bioavailability. Our
+            human practices outreach emphasized the inaccessibility of T2D
+            medications and importance of a local, cost effective solution.
+            <strong>
+              Our Goal is to give resource constrained communities independence
+              from medical facilities for access to their medication.</strong
+            >
+          </p>
+        </div>
+
+        <h4 id="POCNextSteps" class="sectionHead">
+          <strong>Next step</strong>
+        </h4>
+        <div class="bodyParagraph">
+          <p>
+            To test that our recombinant Ex-4 proteins function as expected, we
+            will perform a
+            <a
+              class="glossaryRef"
+              title="Binding-Affinity"
+              href="https://2022.igem.wiki/ucsc/glossary#Binding-Affinity"
+              >binding affinity</a
+            >
+            assay using an
+            <a
+              class="glossaryRef"
+              title="Octet-Machine"
+              href="https://2022.igem.wiki/ucsc/glossary#Octet-Machine"
+              >Octet machine</a
+            >. The Octet machine determines the dissociation constant (<a
+              class="glossaryRef"
+              title="Dissocation-Constant"
+              href="https://2022.igem.wiki/ucsc/glossary#Disocciation-Constant"
+              >k<sub>d</sub></a
+            >) of a protein-<a
+              class="glossaryRef"
+              title="Ligand"
+              href="https://2022.igem.wiki/ucsc/glossary#Ligand"
+              >ligand</a
+            >
+            interaction using antibodies and a fiber optic biosensor
+            <a class="citation" href="#Citation-Accordion">[5]</a>. The
+            Penta-His immobilized antibodies on the fiber optic biosensor bind
+            to the histidine on our Ex-4 as well as
+            <a
+              class="glossaryRef"
+              title="GLP-1-R"
+              href="https://2022.igem.wiki/ucsc/glossary#GLP-1-R"
+              >GLP-1 R</a
+            >
+            proteins.
+          </p>
+          <p>
+            This assay requires only one of the proteins, either Ex-4 or GLP-1
+            R, to have a His-tag. We will use
+            <a
+              class="glossaryRef"
+              title="Enterokinase"
+              href="https://2022.igem.wiki/ucsc/glossary#Enterokinase"
+              >enterokinase</a
+            >
+            and Tobacco Etch Virus Protease (<a
+              class="glossaryRef"
+              title="TEV"
+              href="https://2022.igem.wiki/ucsc/glossary#TEV"
+              >TEV</a
+            >) to remove the His-tag from our protein and
+            <a
+              class="glossaryRef"
+              title="Receptor"
+              href="https://2022.igem.wiki/ucsc/glossary#Receptor"
+              >receptor</a
+            >
+            respectively. Due to the size of Ex-4, this assay will be performed
+            under two conditions: where Ex-4 has the His-tag and where GLP-1 R
+            has the His-tag. We will also perform this assay with purchased
+            GLP-1 R to further validate the binding affinity of our Ex-4.This is
+            the next critical step in proving that it functions properly before
+            implementing Helo.
+          </p>
+        </div>
+        <br />
+        <div class="accordion bg-dark my-5" id="Citation-Accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="Citation-AccordionHeading1">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseCitations"
+                aria-expanded="false"
+                aria-controls="collapseCitations"
+              >
+                Citations
+              </button>
+            </h2>
+            <div
+              id="collapseCitations"
+              class="accordion-collapse collapse"
+              aria-labelledby="Citation-AccordionHeading1"
+              data-bs-parent="#Citation-Accordion"
+            >
+              <div class="accordion-body">
+                <ol class="noBP">
+                  <li id="citation1">
+                    [1] M. S. Haugan, F. B. Hertz, G. Charbon, B. Sahin, A.
+                    Løbner-Olesen, and N. Frimodt-Møller, “Growth Rate of
+                    Escherichia coli During Human Urinary Tract Infection:
+                    Implications for Antibiotic Effect,” Antibiotics (Basel),
+                    vol. 8, no. 3, p. 92, Jul. 2019, doi:
+                    <a
+                      class="citation"
+                      href="https://www.mdpi.com/2079-6382/8/3/92"
+                      >10.3390/antibiotics8030092</a
+                    >.
+                  </li>
+                  <li id="citation2">
+                    [2] Z. D. Blount, “The unexhausted potential of E. coli,”
+                    eLife, vol. 4, p. e05826, Mar. 2015, doi:
+                    <a
+                      class="citation"
+                      href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4373459/"
+                      >10.7554/eLife.05826</a
+                    >.
+                  </li>
+                  <li id="citation3">
+                    [3] G. L. Rosano and E. A. Ceccarelli, “Recombinant protein
+                    expression in Escherichia coli: advances and challenges,”
+                    Front Microbiol, vol. 5, p. 172, Apr. 2014, doi:
+                    <a
+                      class="citation"
+                      href="https://www.frontiersin.org/articles/10.3389/fmicb.2014.00172/full"
+                      >10.3389/fmicb.2014.00172</a
+                    >.
+                  </li>
+                  <li id="citation4">
+                    [4] “Sucrose and Saccharomyces cerevisiae: a relationship
+                    most sweet | FEMS Yeast Research | Oxford Academic.”
+                    <a
+                      class="citation"
+                      href="https://academic.oup.com/femsyr/article/16/1/fov107/2467713"
+                      >https://academic.oup.com/femsyr/article/16/1/fov107/2467713</a
+                    >
+                    (accessed Oct. 11, 2022).
+                  </li>
+                  <li id="citation5">
+                    [5] “Octet® BLI Systems | Protein Analysis,” Sartorius.
+                    <a
+                      class="citation"
+                      href="https://www.sartorius.com/en/products/protein-analysis/octet-bli-detection/octet-label-free-detection-systems"
+                      >https://www.sartorius.com/en/products/protein-analysis/octet-bli-detection/octet-label-free-detection-systems</a
+                    >
+                    (accessed Oct. 05, 2022).
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+
+      <!---- Side Nav ---->
+      <div class="col-lg-2 col-md-1 d-md-block d-sm-none contentRight">
+        <nav id="sideNavBar" class="nav flex-column">
+          <a class="nav-link active" aria-current="page" href="#POCintro"
+            >Engineering <i>E. coli</i></a
+          >
+          <a class="nav-link" href="#ScereEx-4"
+            >Engineering <i>S. cerevisiae</i></a
+          >
+          <a class="nav-link" href="#POCNextSteps">Next step</a>
+          <a class="nav-link" href="#Citation-Accordion">Citations</a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
